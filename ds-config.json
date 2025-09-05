@@ -615,6 +615,11 @@
         ".*": {
           "sni": "none"
         }
+      },
+      "*.googlevideo.com": {
+        ".*": {
+          "sni": null
+        }
       }
     },
     "preSetIpList": {
@@ -950,7 +955,8 @@
       },
       "*thetvdb.com": {
         "54.192.23.105": true
-      }
+      },
+      "*.googlevideo.com": null
     }
   }
 }
