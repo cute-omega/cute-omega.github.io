@@ -121,6 +121,16 @@
           "sni": "guce.yahoo.com"
         }
       },
+      "*.buy.yahoo.com": {
+        ".*": {
+          "sni": "buy.yahoo.com"
+        }
+      },
+      "s.yimg.com": {
+        ".*": {
+          "sni": "www.yahoo.com"
+        }
+      },
       "external-content.duckduckgo.com": {
         ".*": {
           "sni": "none"
@@ -129,6 +139,11 @@
       "*duckduckgo.com": {
         ".*": {
           "sni": "none"
+        }
+      },
+      "www.ecosia.org": {
+        ".*": {
+          "sni": "www.ecosia.org"
         }
       },
       "*startpage.com": {
@@ -209,6 +224,16 @@
       "*vercel.app": {
         ".*": {
           "sni": "vercel.com"
+        }
+      },
+      "*claude.ai": {
+        ".*": {
+          "sni": "claude.ai"
+        }
+      },
+      "copilot.microsoft.com": {
+        ".*": {
+          "sni": "www.azureedge.net"
         }
       },
       "*character.ai": {
@@ -391,9 +416,39 @@
           "sni": "none"
         }
       },
+      "*netflix.com": {
+        ".*": {
+          "sni": "netflix.com"
+        }
+      },
+      "*disneyplus.com": {
+        ".*": {
+          "sni": "disneyplus.com"
+        }
+      },
+      "disney.*.edge.bamgrid.com": {
+        ".*": {
+          "sni": "disney.images.edge.bamgrid.com"
+        }
+      },
       "*gamer.com.tw": {
         ".*": {
           "sni": "none"
+        }
+      },
+      "*bilibili.tv": {
+        ".*": {
+          "sni": "bilibili.tv"
+        }
+      },
+      "open.spotify.com": {
+        ".*": {
+          "sni": "none"
+        }
+      },
+      "*spotify.com": {
+        ".*": {
+          "sni": "spotify.com"
         }
       },
       "*rumble.com": {
@@ -514,6 +569,11 @@
       "a5.behance.net": {
         ".*": {
           "sni": "a5.behance.net"
+        }
+      },
+      "*behance.net": {
+        ".*": {
+          "sni": "behance.net"
         }
       },
       "*okx.com": {
