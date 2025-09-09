@@ -834,13 +834,13 @@
         "149.154.174.200": true
       },
       "(zws2*.web.telegram.org|zws4*.web.telegram.org)": {
-        "136.244.94.246": true
+        "93.183.68.61": true
       },
       "*.web.telegram.org": {
         "149.154.170.200": true
       },
       "(*telegram.org|telegram.me|*tg.dev|t.me|*.t.me|*telesco.pe)": {
-        "136.244.94.246": true
+        "93.183.68.61": true
       },
       "*discord.com": {
         "162.159.136.232": true
@@ -945,7 +945,7 @@
         "162.159.138.60": true
       },
       "identity.flickr.com": {
-        "52.206.14.103": true
+        "52.6.22.65": true
       },
       "*flickr.com": {
         "13.33.142.102": true
@@ -954,7 +954,7 @@
         "199.232.196.193": true
       },
       "*thetvdb.com": {
-        "54.192.23.105": true
+        "13.35.222.88": true
       },
       "*.googlevideo.com": null
     }
