@@ -1643,31 +1643,11 @@
         "104.71.182.190": true
       },
       "checkout.steampowered.com": {
-        "23.58.97.230": "true",
-        "23.195.152.91": "true",
-        "23.196.173.177": "true",
-        "23.35.101.126": "true",
-        "23.54.153.177": "true"
-      }
-    },
-    "dns": {
-      "mapping": {
-        "github.com": "local",
-        "*.github.com": "local",
-        "*github*.com": "local",
-        "*.github.io": "local"
-      },
-      "speedTest": {
-        "hostnameList": [
-          "github.com"
-        ]
-      },
-      "providers": {
-        "local": {
-          "type": "udp",
-          "server": "127.0.0.1",
-          "cacheSize": 10000
-        }
+        "23.58.97.230": true,
+        "23.195.152.91": true,
+        "23.196.173.177": true,
+        "23.35.101.126": true,
+        "23.54.153.177": true
       }
     },
     "whiteList": {
