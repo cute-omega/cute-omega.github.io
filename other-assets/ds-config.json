@@ -620,6 +620,11 @@
           "sni": "www.baidu.com"
         }
       },
+      "*gelbooru.com": {
+        ".*": {
+          "sni": "none"
+        }
+      },
       "*.googlevideo.com": {
         ".*": {
           "sni": null
@@ -1293,6 +1298,9 @@
       "*thetvdb.com": {
         "13.35.222.88": true,
         "54.192.23.105": true
+      },
+      "*gelbooru.com": {
+        "108.181.143.72": true
       },
       "*.googlevideo.com": null,
       "copilot.microsoft.com": {
