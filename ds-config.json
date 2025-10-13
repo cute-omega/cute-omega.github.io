@@ -66,6 +66,11 @@
           "sni": "www.baidu.com"
         }
       },
+      "*gelbooru.com": {
+        ".*": {
+          "sni": "none"
+        }
+      },
       "*sukebei.nyaa.si": {
         ".*": {
           "sni": "www.baidu.com"
@@ -620,11 +625,6 @@
           "sni": "www.baidu.com"
         }
       },
-      "*gelbooru.com": {
-        ".*": {
-          "sni": "none"
-        }
-      },
       "*.googlevideo.com": {
         ".*": {
           "sni": null
@@ -953,6 +953,9 @@
       },
       "*ehtracker.org": {
         "5.79.104.115": true
+      },
+      "*gelbooru.com": {
+        "108.181.143.72": true
       },
       "*sukebei.nyaa.si": {
         "198.251.89.38": true
@@ -1298,9 +1301,6 @@
       "*thetvdb.com": {
         "13.35.222.88": true,
         "54.192.23.105": true
-      },
-      "*gelbooru.com": {
-        "108.181.143.72": true
       },
       "*.googlevideo.com": null,
       "copilot.microsoft.com": {
