@@ -226,6 +226,11 @@
           "sni": "huggingface.cn"
         }
       },
+      "hub.docker.com": {
+        ".*": {
+          "sni": "none"
+        }
+      },
       "*vercel.app": {
         ".*": {
           "sni": "vercel.com"
@@ -1061,6 +1066,10 @@
       "*huggingface.co": {
         "3.167.200.113": true
       },
+      "hub.docker.com": {
+        "52.4.183.149": true,
+        "54.208.73.48": true
+      },
       "*vercel.app": {
         "64.29.17.193": true
       },
@@ -1094,7 +1103,7 @@
         "96.126.98.220": true
       },
       "*itch.io": {
-        "45.79.115.66": true
+        "142.171.75.212": true
       },
       "*steamcommunity.com": {
         "184.50.187.66": true,
@@ -1467,9 +1476,6 @@
       },
       "cdn-uploads.huggingface.co": {
         "3.167.200.113": true
-      },
-      "hub.docker.com": {
-        "54.208.73.48": true
       },
       "*z-library.sk": {
         "176.123.7.105": true
