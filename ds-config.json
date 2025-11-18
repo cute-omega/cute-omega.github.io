@@ -1,6 +1,11 @@
 {
   "server": {
     "intercepts": {
+      "*.googlevideo.com": {
+        ".*": {
+          "sni": null
+        }
+      },
       "cdn.jsdelivr.net": {
         ".*": {
           "sni": "none"
@@ -626,11 +631,6 @@
           "sni": "www.baidu.com"
         }
       },
-      "*.googlevideo.com": {
-        ".*": {
-          "sni": null
-        }
-      },
       "_www.ecosia.org": {
         ".*": {
           "sni": "www.ecosia.org"
@@ -872,6 +872,7 @@
       }
     },
     "preSetIpList": {
+      "*.googlevideo.com": null,
       "cdn.jsdelivr.net": {
         "104.16.89.20": true
       },
@@ -1015,8 +1016,7 @@
         "3.167.200.113": true
       },
       "hub.docker.com": {
-        "52.4.183.149": true,
-        "54.208.73.48": true
+        "52.4.183.149": true
       },
       "*vercel.app": {
         "64.29.17.193": true
@@ -1232,7 +1232,6 @@
         "13.35.222.88": true,
         "13.3.222.88": true
       },
-      "*.googlevideo.com": null,
       "www.ecosia.org": {
         "2001:67c:2960:6464::ac40:9647": true
       },
@@ -1261,7 +1260,7 @@
         "2001:67c:2960:6464::23ba:e018": true
       },
       "itch.io": {
-        "45.79.115.66": true
+        "142.171.75.212": true
       },
       "*behance.net": {
         "2001:67c:2960:6464::9765:41c5": true
@@ -1547,6 +1546,18 @@
       "defaultTimeout": 20000
     }
   },
+  "proxy": {
+    "excludeIpList": {
+      "*ali*": null,
+      "*youpinimg.com": true,
+      "*.live.com": false,
+      "*steaminventoryhelper.com": true,
+      "*.chaoxing.com": true,
+      "testzs.cn": true,
+      "*.zhihu.com": true,
+      "*.hdslb.*": true
+    }
+  },
   "plugin": {
     "overwall": {
       "targets": {
@@ -1561,19 +1572,6 @@
         "*github*.com": null
       },
       "enabled": true
-    }
-  },
-  "proxy": {
-    "excludeIpList": {
-      "desc": "悠悠有品的图片地址",
-      "*youpinimg.com": true,
-      "*.live.com": false,
-      "*steaminventoryhelper.com": true,
-      "*.chaoxing.com": true,
-      "testzs.cn": true,
-      "*.zhihu.com": true,
-      "*.hdslb.*": true,
-      "*ali*": true
     }
   }
 }
