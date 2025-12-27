@@ -70,9 +70,10 @@
         "208.80.153.224": true,
         "185.15.58.224": true
       },
-      "^(aistudio|.*pa.clients6|apis).google.com$": {
+      "^(aistudio|.*pa.clients6|apis|gemini).google.com$": {
+        "47.102.115.14": false,
         "8.137.102.117": {
-          "desc": "AI Studio相关,阿里云,解锁地区限制"
+          "desc": "AI Studio相关,阿里云,解锁地区限制,新加坡,仅大陆访问"
         }
       },
       "^.*(with)?google(apis|usercontent)?.com.*$": {
