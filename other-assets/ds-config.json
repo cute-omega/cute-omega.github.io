@@ -121,6 +121,14 @@
   },
   "server": {
     "preSetIpList": {
+      "^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com|antigravity.google)$": {
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        },
+        "8.137.102.117": {
+          "desc": "阿里云中转"
+        }
+      },
       "^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com)$": {
         "142.251.189.206": {
           "desc": "自动地区官方"
@@ -309,6 +317,12 @@
       },
       "status.huggingface.co": {
         "3.167.200.113": true
+      },
+      "stitch.withgoogle.com": {
+        "47.102.115.14": false,
+        "8.137.102.117": {
+          "desc": "AI Studio相关,阿里云,解锁地区限制,新加坡,仅大陆访问"
+        }
       },
       "*archiveofourown.org": {
         "104.20.8.2": true
@@ -1241,7 +1255,7 @@
         }
       },
       "*steamcommunity.com": {
-        "^(?!/discussions).*$": {
+        "^(?!/discussions|/Profile|/app.*/discussions).*$": {
           "desc": "讨论区锁区,考虑不拦截丢给彩蛋",
           "sni": "www.baidu.com"
         },
