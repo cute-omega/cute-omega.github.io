@@ -1126,24 +1126,6 @@
           "sni": "www.baidu.com"
         }
       },
-      "github.githubassets.com": {
-        "^(/[^/]+)*/[^./]+\\.(svg|png|gif|jpg|jpeg|ico|js|css)(\\?.*)?$": {
-          "cacheDays": 365,
-          "desc": "图片、JS文件、CSS文件，缓存1年"
-        },
-        ".*.backup": {
-          "responseReplace": {
-            "headers": {
-              "cross-origin-resource-policy": "cross-origin",
-              "access-control-allow-origin": "*",
-              "set-cookie": "[remove]"
-            }
-          },
-          "proxy": "github.com",
-          "desc": "github.com域名下，该请求已经不存在，此配置暂时先备份掉。",
-          "sni": "baidu.com"
-        }
-      },
       "*.youtube-nocookie.com": {
         ".*": {
           "sni": "baidu.com"
