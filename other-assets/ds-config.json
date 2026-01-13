@@ -156,7 +156,8 @@
         }
       },
       "internal-api.virginia.labs.lumalabs.ai": {
-        "34.204.141.236": true
+        "34.204.141.236": true,
+        "52.201.197.24": true
       },
       "community.cloudflare.steamstatic.com": {
         "172.64.145.151": true,
@@ -370,7 +371,8 @@
         "203.208.41.98": true
       },
       "identity.flickr.com": {
-        "52.6.22.65": true
+        "52.6.22.65": true,
+        "52.6.2.68": true
       },
       "services.github.com": {
         "140.82.113.18": true
@@ -484,6 +486,9 @@
       "*redditmedia.com": {
         "146.75.33.140": true
       },
+      "*scratch.mit.edu": {
+        "151.101.66.133": true
+      },
       "*sukebei.nyaa.si": {
         "198.251.89.38": true
       },
@@ -594,7 +599,8 @@
         "151.101.0.84": true
       },
       "*startpage.com": {
-        "67.63.58.139": true
+        "67.63.58.139": true,
+        "67.63.60.231": true
       },
       "*wikibooks.org": {
         "185.15.59.224": true
@@ -1214,11 +1220,6 @@
           "sni": "none"
         }
       },
-      "copilot.microsoft.com": {
-        ".*": {
-          "sni": "www.azureedge.net"
-        }
-      },
       "*archiveofourown.org": {
         ".*": {
           "sni": "none"
@@ -1422,6 +1423,11 @@
       "*redditmedia.com": {
         ".*": {
           "sni": "www.baidu.com"
+        }
+      },
+      "*scratch.mit.edu": {
+        ".*": {
+          "sni": "none"
         }
       },
       "*sukebei.nyaa.si": {
