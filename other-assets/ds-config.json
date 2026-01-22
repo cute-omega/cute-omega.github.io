@@ -67,6 +67,7 @@
       "enabled": true,
       "targets": {
         "*.cloudflareinsights.com": true,
+        "*.notepad-plus-plus.org": true,
         "*.wikipedia-on-ipfs.org": true,
         "*.google-analytics.com": true,
         "*.oaiusercontent.com": true,
@@ -141,7 +142,7 @@
         "208.80.153.224": true,
         "185.15.58.224": true
       },
-      "^(aistudio|.*pa.clients6|apis|gemini).google.com$": {
+      "^(aistudio|.*pa.clients6|apis|gemini|console.cloud).google.com$": {
         "47.102.115.14": false,
         "8.137.102.117": {
           "desc": "AI Studio相关,阿里云,解锁地区限制,新加坡,仅大陆访问"
@@ -2147,8 +2148,8 @@
         "^(/[\\w-.]+){2,}/?(\\?.*)?$": null,
         "^(/[^/]+){2,}/?(\\?.*)?$": {
           "tampermonkeyScript": "https://gitee.com/wangliang181230/dev-sidecar/raw/scripts/tampermonkey.js",
-          "_script": "https://gitee.com/wangliang181230/dev-sidecar/raw/scripts/GithubEnhanced-High-Speed-Download.user.js",
           "remark": "注：上面所使用的脚本地址，为高速镜像地址。",
+          "script": "https://gitee.com/wangliang181230/dev-sidecar/raw/scripts/GithubEnhanced-High-Speed-Download.user.js",
           "desc": "油猴脚本：高速下载 Git Clone/SSH、Release、Raw、Code(ZIP) 等文件 (公益加速)、项目列表单文件快捷下载、添加 git clone 命令"
         }
       },
