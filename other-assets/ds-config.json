@@ -2249,6 +2249,11 @@
           "sni": "www.baidu.com"
         }
       },
+      "metaInfo": {
+        "updateLog": "固定配置元信息的格式",
+        "version": 202601232103,
+        "id": "official"
+      },
       "*.ig.me": {
         ".*": {
           "sni": "www.baidu.com"
