@@ -162,10 +162,18 @@
       },
       "community.cloudflare.steamstatic.com": {
         "172.64.145.151": true,
-        "104.18.42.105": true
+        "104.18.42.105": true,
+        "23.209.46.70": true
       },
       "objects-origin.githubusercontent.com": {
         "140.82.113.22": true
+      },
+      "^(store|checkout).steampowered.com$": {
+        "23.15.141.198": true,
+        "23.206.181.48": true,
+        "23.35.101.126": true,
+        "72.246.28.155": true,
+        "2.19.100.78": true
       },
       "external-content.duckduckgo.com": {
         "20.43.160.189": true
@@ -181,26 +189,6 @@
       "graphql.api.dailymotion.com": {
         "34.84.14.157": true
       },
-      "images.steamusercontent.com": {
-        "104.77.160.215": true,
-        "203.69.138.224": true,
-        "23.207.202.198": true,
-        "23.216.145.139": true,
-        "184.27.185.92": true,
-        "184.30.148.77": true,
-        "218.231.251.9": true,
-        "23.212.190.51": true,
-        "23.54.155.102": true,
-        "23.56.109.164": true,
-        "41.175.223.40": true,
-        "95.100.156.90": true,
-        "95.101.24.216": true,
-        "184.24.77.66": true,
-        "2.20.68.235": true,
-        "23.2.16.208": true,
-        "23.40.43.24": true,
-        "23.46.10.70": true
-      },
       "sessions-bugsnag.docker.com": {
         "100.29.167.200": true,
         "54.156.140.159": null,
@@ -214,13 +202,6 @@
       },
       "cdn-uploads.huggingface.co": {
         "3.167.200.113": true
-      },
-      "checkout.steampowered.com": {
-        "23.196.173.177": true,
-        "23.195.152.91": true,
-        "23.35.101.126": true,
-        "23.54.153.177": true,
-        "23.58.97.230": true
       },
       "disney.*.edge.bamgrid.com": {
         "2001:67c:2960:6464::36e6:4744": true
@@ -272,13 +253,6 @@
         "3.167.200.113": true
       },
       "store.steampowered.com": {
-        "23.202.181.219": true,
-        "104.99.49.179": true,
-        "23.205.36.100": true,
-        "23.206.181.48": true,
-        "23.35.101.126": true,
-        "23.218.33.47": true,
-        "23.219.73.99": true,
         "23.46.197.62": true
       },
       "zws1*.web.telegram.org": {
@@ -326,21 +300,18 @@
           "desc": "AI Studio相关,阿里云,解锁地区限制,新加坡,仅大陆访问"
         }
       },
+      "*.steamcommunity.com": {
+        "104.82.234.109": true,
+        "184.25.197.212": true,
+        "23.194.234.100": true,
+        "23.2.191.232": true,
+        "23.42.14.90": true
+      },
       "*archiveofourown.org": {
         "104.20.8.2": true
       },
       "account.nicovideo.jp": {
         "3.167.200.113": true
-      },
-      "api.steampowered.com": {
-        "104.71.182.190": true,
-        "184.85.112.102": true,
-        "23.199.145.101": true,
-        "23.207.106.113": true,
-        "23.216.236.253": true,
-        "104.68.46.176": true,
-        "23.36.106.129": true,
-        "23.5.250.50": true
       },
       "community.github.com": {
         "140.82.114.17": true
@@ -358,11 +329,7 @@
         "50.116.4.196": true
       },
       "*steamcommunity.com": {
-        "184.84.187.165": true,
-        "23.194.234.100": true,
-        "184.50.187.66": true,
-        "23.51.204.111": true,
-        "23.76.43.59": true
+        "184.50.187.66": true
       },
       "fonts.googleapis.cn": {
         "220.181.174.162": true,
@@ -2250,8 +2217,8 @@
         }
       },
       "metaInfo": {
-        "updateLog": "固定配置元信息的格式",
-        "version": 202601232103,
+        "updateLog": "更新steam相关IP,修正格式",
+        "version": 202601252130,
         "id": "official"
       },
       "*.ig.me": {
