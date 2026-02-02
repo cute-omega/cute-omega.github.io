@@ -1105,6 +1105,9 @@
           "cacheDays": 365,
           "desc": "图片、JS文件、CSS文件，缓存1年"
         },
+        "/assets/fakefile.js": {
+          "abort": true
+        },
         ".*.backup": {
           "responseReplace": {
             "headers": {
@@ -2217,8 +2220,8 @@
         }
       },
       "metaInfo": {
-        "updateLog": "更新steam相关IP,修正格式",
-        "version": 202601252130,
+        "updateLog": "适配2.0.0.3的新配置，快速结束假文件的加载",
+        "version": 202602022150,
         "id": "official"
       },
       "*.ig.me": {
