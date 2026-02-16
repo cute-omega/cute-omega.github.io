@@ -301,11 +301,7 @@
         }
       },
       "*.steamcommunity.com": {
-        "104.82.234.109": true,
-        "184.25.197.212": true,
-        "23.194.234.100": true,
-        "23.2.191.232": true,
-        "23.42.14.90": true
+        "184.50.187.66": true
       },
       "*archiveofourown.org": {
         "104.20.8.2": true
@@ -616,7 +612,6 @@
         "44.221.37.199": null,
         "52.44.227.212": null,
         "54.156.14.194": null,
-        "52.4.183.149": true,
         "54.208.73.48": null,
         "8.218.75.61": true
       },
@@ -2221,8 +2216,8 @@
         }
       },
       "metaInfo": {
-        "updateLog": "适配2.0.0.3的新配置，快速结束假文件的加载",
-        "version": 202602022150,
+        "updateLog": "更新hub.docker.com steamcommunity.com规则,恢复onedrive.live.com规则,在帮助页面新增远程配置说明",
+        "version": 202602161130,
         "id": "official"
       },
       "*.ig.me": {
@@ -2430,7 +2425,7 @@
       "*.msedge.net": true,
       "*.wuyou.net": true,
       "*.zhihu.com": true,
-      "*.live.com": false,
+      "*.live.com": null,
       "*.z-lib.fo": true,
       "*.hdslb.*": true,
       "testzs.cn": true,
@@ -2441,6 +2436,25 @@
   },
   "help": {
     "dataList": [
+      {
+        "children": [
+          {
+            "rowClass": "title2",
+            "title": "1、官方远程配置版本:202602161130"
+          },
+          {
+            "children": [
+              {
+                "title": "更新hub.docker.com steamcommunity.com规则,恢复onedrive.live.com规则,在帮助页面新增远程配置说明"
+              }
+            ],
+            "rowClass": "title2",
+            "title": "2、官方远程配置更新日志"
+          }
+        ],
+        "rowClass": "title1",
+        "title": "〇、远程配置说明"
+      },
       {
         "children": [
           {
