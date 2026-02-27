@@ -1109,6 +1109,7 @@
           "desc": "图片、JS文件、CSS文件，缓存1年"
         },
         "/assets/fakefile.js": {
+          "cacheDays": 365,
           "abort": true
         },
         ".*.backup": {
