@@ -91,6 +91,7 @@
         "*.z-library.sk": true,
         "*.zlibrary*.se": true,
         "*.chatgpt.com": false,
+        "*.discord.com": true,
         "*.intlify.dev": true,
         "test-ipv6.com": true,
         "*.amazon.com": true,
