@@ -127,9 +127,7 @@
         "142.251.189.206": {
           "desc": "自动地区官方"
         },
-        "8.137.102.117": {
-          "desc": "阿里云中转"
-        }
+        "8.137.102.117": false
       },
       "^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com)$": {
         "142.251.189.206": {
@@ -153,9 +151,7 @@
         "142.251.189.206": {
           "desc": "自动地区官方"
         },
-        "8.137.102.117": {
-          "desc": "阿里云中转"
-        }
+        "8.137.102.117": false
       },
       "internal-api.virginia.labs.lumalabs.ai": {
         "34.204.141.236": true,
@@ -223,7 +219,10 @@
         "93.183.68.61": true
       },
       "*.youtube-nocookie.com": {
-        "8.137.102.117": true
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        },
+        "8.137.102.117": false
       },
       "*githubusercontent.com": {
         "151.101.128.133": true,
@@ -633,13 +632,19 @@
         "20.27.177.113": true
       },
       "*.gstatic.com": {
-        "8.137.102.117": true
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        },
+        "8.137.102.117": false
       },
       "*.spotify.com": {
         "2001:67c:2960:6464::23ba:e018": true
       },
       "*.youtube.com": {
-        "8.137.102.117": true
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        },
+        "8.137.102.117": false
       },
       "*amazon.co.jp": {
         "13.35.219.115": true
@@ -757,7 +762,10 @@
         "210.140.139.155": true
       },
       "*.ggpht.com": {
-        "8.137.102.117": true,
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        },
+        "8.137.102.117": false,
         "34.49.133.3": true
       },
       "*bbci.co.uk": {
@@ -825,7 +833,10 @@
         "203.137.29.49": true
       },
       "i.ytimg.com": {
-        "8.137.102.117": true,
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        },
+        "8.137.102.117": false,
         "34.49.133.3": true
       },
       "m.twitch.tv": {
@@ -835,7 +846,10 @@
         "93.183.68.61": true
       },
       "*.youtu.be": {
-        "8.137.102.117": true
+        "142.251.189.206": {
+          "desc": "自动地区官方"
+        },
+        "8.137.102.117": false
       },
       "*233v2.com": {
         "13.52.115.166": true,
@@ -1054,6 +1068,12 @@
       "fonts.(googleapis|gstatic).com": {
         ".*": {
           "proxy": "fonts.googleapis.cn"
+        }
+      },
+      "^(?<pre>.*).googlevideo.com$": {
+        "*": {
+          "proxy_backup": "${pre}.gvt1.com",
+          "sni": "g.cn"
         }
       },
       "ms-sso.copilot.microsoft.com": {
@@ -2308,19 +2328,11 @@
     "host": "0.0.0.0",
     "dns": {
       "providers": {
-        "Google-DoH": {
-          "cacheSize": 1000,
-          "server": "https://dns.google/dns-query",
-          "desc": "不可用",
-          "sni": "www.google.cn"
-        },
         "cf-DoH": {
-          "cacheSize": 1000,
           "server": "https://cloudflare-dns.com/dns-query",
           "sni": "baidu.com"
         },
         "cf-DoT": {
-          "cacheSize": 1000,
           "server": "tls://1.1.1.1",
           "sni": "baidu.com"
         },
@@ -2333,7 +2345,7 @@
       "speedTest": {
         "dnsProviders": [
           "cf-DoT",
-          "cf-DoH"
+          "safe360"
         ],
         "hostnameList": [
           "github.com"
@@ -2360,6 +2372,7 @@
         "*.github.io": "local",
         "*.pixiv.org": "cf-DoT",
         "*.pximg.net": "cf-DoT",
+        "*.gvt1.com": "safe360",
         "*.pypi.org": "cf-DoT",
         "*.v2ex.com": "cf-DoT",
         "github.com": "local"
@@ -2638,7 +2651,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202604121642,
+      "version": 202604130034,
       "id": "io.github.cute-omega"
     }
   }
