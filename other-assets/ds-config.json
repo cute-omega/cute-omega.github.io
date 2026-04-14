@@ -1104,6 +1104,11 @@
           "sni": "baidu.com"
         }
       },
+      "^.*\\.google\\.com(\\.\\w+)?$": {
+        ".*": {
+          "sni": "www.google.cn"
+        }
+      },
       "disney.*.edge.bamgrid.com": {
         ".*": {
           "sni": "disney.images.edge.bamgrid.com"
@@ -2655,7 +2660,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202604141010,
+      "version": 202604141714,
       "id": "io.github.cute-omega"
     }
   }
