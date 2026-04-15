@@ -2332,6 +2332,30 @@
     },
     "host": "0.0.0.0",
     "dns": {
+      "familyMapping": {
+        "*.vuepress.vuejs.org": "4",
+        "*.stackoverflow.com": "4",
+        "*.gh.docmirror.top": "4",
+        "*.cloudflare.com": "4",
+        "*.cloudfront.net": "4",
+        "*.electronjs.org": "4",
+        "*.amazonaws.com": "4",
+        "*.azureedge.net": "4",
+        "*.jetbrains.com": "4",
+        "*.onesignal.com": "4",
+        "img.shields.io": "4",
+        "*.iubenda.com": "4",
+        "*.yarnpkg.com": "4",
+        "*.docker.com": "4",
+        "*.github.com": "4",
+        "*github*.com": "4",
+        "*.github.io": "4",
+        "*.pixiv.org": "4",
+        "*.pximg.net": "4",
+        "*.gvt1.com": "6",
+        "*.pypi.org": "4",
+        "*.v2ex.com": "4"
+      },
       "providers": {
         "cf-DoH": {
           "server": "https://cloudflare-dns.com/dns-query",
@@ -2377,7 +2401,7 @@
         "*.github.io": "local",
         "*.pixiv.org": "cf-DoT",
         "*.pximg.net": "cf-DoT",
-        "*.gvt1.com": "safe360",
+        "*.gvt1.com": "aliyun",
         "*.pypi.org": "cf-DoT",
         "*.v2ex.com": "cf-DoT",
         "github.com": "local"
@@ -2660,7 +2684,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202604151008,
+      "version": 202604151715,
       "id": "io.github.cute-omega"
     }
   }
