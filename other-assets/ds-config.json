@@ -2576,7 +2576,11 @@
                 "url": "https://github.com/docmirror/dev-sidecar/milestone/9"
               },
               {
-                "title": "[ 2026-04-12 ] v2.0.1",
+                "title": "[ 2026-04-18 ] v2.0.2（支持IPv6、性能和稳定性提升）",
+                "url": "https://github.com/docmirror/dev-sidecar/releases/tag/v2.0.2"
+              },
+              {
+                "title": "[ 2026-04-12 ] v2.0.1（可在支持IPv6网络直连看YouTube视频了）",
                 "url": "https://github.com/docmirror/dev-sidecar/releases/tag/v2.0.1"
               },
               {
@@ -2688,7 +2692,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202604181002,
+      "version": 202604181643,
       "id": "io.github.cute-omega"
     }
   }
