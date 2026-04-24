@@ -1037,6 +1037,11 @@
           "sni": "cloudfront.net"
         }
       },
+      "kubernetes-charts.storage.googleapis.com": {
+        ".*": {
+          "proxy": "kubernetes-charts.proxy.ustclug.org"
+        }
+      },
       "internal-api.virginia.labs.lumalabs.ai": {
         ".*": {
           "sni": "none"
@@ -1223,6 +1228,11 @@
           "sni": "none"
         }
       },
+      "downloads.openwrt.org": {
+        ".*": {
+          "proxy": "openwrt.proxy.ustclug.org"
+        }
+      },
       "*archiveofourown.org": {
         ".*": {
           "sni": "none"
@@ -1267,6 +1277,12 @@
           "sni": "none"
         }
       },
+      "ajax.googleapis.com": {
+        ".*": {
+          "proxy": "ajax.proxy.ustclug.org",
+          "desc": "根据2026年4月24日时访问https://mirrors.ustc.edu.cn 的说明，修正internal v202604122348中指向ajax.lug.ustc.edu.cn的配置"
+        }
+      },
       "download.docker.com": {
         ".*": {
           "sni": "download.docker.com"
@@ -1295,6 +1311,11 @@
           "requestReplace": {
             "doDownload": true
           }
+        }
+      },
+      "packages.elastic.co": {
+        ".*": {
+          "proxy": "elastic.proxy.ustclug.org"
         }
       },
       "services.github.com": {
@@ -1340,6 +1361,11 @@
       "calendar.proton.me": {
         ".*": {
           "sni": "none"
+        }
+      },
+      "registry.npmjs.org": {
+        ".*": {
+          "desc": "既然ds有NPM镜像了，这个就没什么必要了，先不配置了"
         }
       },
       "support.github.com": {
@@ -1396,6 +1422,11 @@
           "requestReplace": {
             "doDownload": true
           }
+        }
+      },
+      "ppa.launchpad.net": {
+        ".*": {
+          "proxy": "launchpad.proxy.ustclug.org"
         }
       },
       "upld.e-hentai.org": {
@@ -1577,6 +1608,11 @@
       "gist.github.com": {
         ".*": {
           "sni": "baidu.com"
+        }
+      },
+      "repo1.maven.org": {
+        ".*": {
+          "proxy": "maven.proxy.ustclug.org"
         }
       },
       "www.f-droid.org": {
@@ -2461,7 +2497,7 @@
       "*.soboten.com": true,
       "3.164.110.117": true,
       "44.239.165.12": true,
-      "*.elastic.co": true,
+      "*.elastic.co": false,
       "*.gitlab.com": true,
       "*.mihoyo.com": true,
       "*.msedge.net": true,
@@ -2482,12 +2518,12 @@
         "children": [
           {
             "rowClass": "title2",
-            "title": "1、官方远程配置版本:202604170212"
+            "title": "1、官方远程配置版本:202604241421"
           },
           {
             "children": [
               {
-                "title": "添加DNS `bebasid`，并配置YTB视频使用该DNS（用于v2.0.2版本）"
+                "title": "狠狠薅了一波mirrors.ustc.edu.cn的反代羊毛"
               }
             ],
             "rowClass": "title2",
@@ -2692,7 +2728,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202604241023,
+      "version": 202604241727,
       "id": "io.github.cute-omega"
     }
   }
