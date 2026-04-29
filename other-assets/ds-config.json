@@ -1076,8 +1076,12 @@
         }
       },
       "^(?<pre>.*).googlevideo.com$": {
+        "/generate_204": {
+          "success": true
+        },
         "*": {
           "proxy_backup": "${pre}.gvt1.com",
+          "options": true,
           "sni": "g.cn"
         }
       },
@@ -2728,7 +2732,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202604291802,
+      "version": 202604300124,
       "id": "io.github.cute-omega"
     }
   }
