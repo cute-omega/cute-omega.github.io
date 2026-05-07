@@ -1070,11 +1070,6 @@
           "sni": "g.cn"
         }
       },
-      "fonts.(googleapis|gstatic).com": {
-        ".*": {
-          "proxy": "fonts.googleapis.cn"
-        }
-      },
       "^(?<pre>.*).googlevideo.com$": {
         "/generate_204": {
           "success": true
@@ -1257,6 +1252,16 @@
           "sni": "none"
         }
       },
+      "fonts.googleapis.com": {
+        ".*": {
+          "backup": [
+            "gstatic.loli.net",
+            "fonts-gstatic.proxy.ustclug.org"
+          ],
+          "proxy": "fonts.googleapis.cn",
+          "test": "https://fonts.googleapis.com/css?family=Oswald"
+        }
+      },
       "resources.github.com": {
         ".*": {
           "sni": "none"
@@ -1403,6 +1408,16 @@
           "sni": "consent.yahoo.com"
         }
       },
+      "fonts.gstatic.com": {
+        ".*": {
+          "backup": [
+            "gstatic.loli.net",
+            "fonts-gstatic.proxy.ustclug.org"
+          ],
+          "proxy": "fonts.googleapis.cn",
+          "test": "https://fonts.googleapis.com/css?family=Oswald"
+        }
+      },
       "forum.f-droid.org": {
         ".*": {
           "sni": "none"
@@ -1436,6 +1451,11 @@
       "upld.e-hentai.org": {
         ".*": {
           "sni": "none"
+        }
+      },
+      "*.googleapis.com": {
+        ".*": {
+          "sni": "www.google.cn"
         }
       },
       "*.greasyfork.org": {
@@ -2522,16 +2542,7 @@
         "children": [
           {
             "rowClass": "title2",
-            "title": "1、官方远程配置版本:202604241421"
-          },
-          {
-            "children": [
-              {
-                "title": "狠狠薅了一波mirrors.ustc.edu.cn的反代羊毛"
-              }
-            ],
-            "rowClass": "title2",
-            "title": "2、官方远程配置更新日志"
+            "title": "从2.0.2起，dev-sidecar原生支持显示配置元数据，不再额外手动标注。"
           }
         ],
         "rowClass": "title1",
@@ -2732,7 +2743,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202605070126,
+      "version": 202605071034,
       "id": "io.github.cute-omega"
     }
   }
