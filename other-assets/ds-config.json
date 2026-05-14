@@ -1414,8 +1414,8 @@
             "gstatic.loli.net",
             "fonts-gstatic.proxy.ustclug.org"
           ],
-          "proxy": "fonts.googleapis.cn",
-          "test": "https://fonts.googleapis.com/css?family=Oswald"
+          "proxy": "fonts.gstatic.cn",
+          "test": "https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2"
         }
       },
       "forum.f-droid.org": {
@@ -2743,7 +2743,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202605140158,
+      "version": 202605141047,
       "id": "io.github.cute-omega"
     }
   }
