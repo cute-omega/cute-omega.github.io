@@ -155,7 +155,7 @@
       },
       "internal-api.virginia.labs.lumalabs.ai": {
         "34.204.141.236": true,
-        "44.221.184.204": true
+        "34.233.59.41": true
       },
       "community.cloudflare.steamstatic.com": {
         "172.64.145.151": true,
@@ -259,16 +259,16 @@
         "149.154.174.200": true
       },
       "zws2*.web.telegram.org": {
-        "93.183.68.61": true
+        "45.192.12.153": true
       },
       "zws3*.web.telegram.org": {
         "149.154.174.200": true
       },
       "zws4*.web.telegram.org": {
-        "93.183.68.61": true
+        "45.192.12.153": true
       },
       "*youtube-nocookie.com": {
-        "34.49.133.3": true
+        "183.56.143.147": true
       },
       "account-api.proton.me": {
         "185.70.42.20": true
@@ -674,6 +674,7 @@
         "3.167.200.113": true
       },
       "*telegram.org": {
+        "45.192.12.153": true,
         "93.183.68.61": true
       },
       "*whatsapp.com": {
@@ -701,7 +702,7 @@
         "151.101.194.167": true
       },
       "*android.com": {
-        "34.49.133.3": true
+        "183.56.143.147": true
       },
       "*archive.org": {
         "207.241.237.2": true
@@ -713,7 +714,7 @@
         "2001:67c:2960:6464::6797:9785": true
       },
       "*blogger.com": {
-        "34.49.133.3": true
+        "183.56.143.147": true
       },
       "*discord.com": {
         "162.159.136.232": true
@@ -725,7 +726,7 @@
         "37.218.243.72": true
       },
       "*gstatic.com": {
-        "34.49.133.3": true
+        "183.56.143.147": true
       },
       "*lumalabs.ai": {
         "76.76.21.21": true
@@ -753,7 +754,7 @@
         "185.88.181.3": true
       },
       "*youtube.com": {
-        "34.49.133.3": true
+        "183.56.143.147": true
       },
       "_*.yahoo.com": {
         "2001:67c:2960:6464::b4de:6a0b": true
@@ -765,8 +766,8 @@
         "142.251.189.206": {
           "desc": "自动地区官方"
         },
-        "8.137.102.117": false,
-        "34.49.133.3": true
+        "183.56.143.147": true,
+        "8.137.102.117": false
       },
       "*bbci.co.uk": {
         "23.77.21.232": true
@@ -784,7 +785,7 @@
         "20.27.177.113": true
       },
       "*google.com": {
-        "34.49.133.3": true
+        "183.56.143.147": true
       },
       "*instagr.am": {
         "157.240.236.174": true,
@@ -800,6 +801,7 @@
         "205.220.231.24": true
       },
       "*telesco.pe": {
+        "45.192.12.153": true,
         "93.183.68.61": true
       },
       "*tumblr.com": {
@@ -836,14 +838,14 @@
         "142.251.189.206": {
           "desc": "自动地区官方"
         },
-        "8.137.102.117": false,
-        "34.49.133.3": true
+        "183.56.143.147": true,
+        "8.137.102.117": false
       },
       "m.twitch.tv": {
         "151.101.194.167": true
       },
       "telegram.me": {
-        "93.183.68.61": true
+        "45.192.12.153": true
       },
       "*.youtu.be": {
         "142.251.189.206": {
@@ -928,7 +930,8 @@
         "151.101.193.224": true
       },
       "*eyny.com": {
-        "172.241.24.66": true
+        "172.241.24.66": true,
+        "23.19.72.223": true
       },
       "*v2ex.com": {
         "172.66.137.6": true
@@ -937,7 +940,7 @@
         "185.88.181.3": true
       },
       "*youtu.be": {
-        "34.49.133.3": true
+        "183.56.143.147": true
       },
       "www.ok.ru": {
         "5.61.23.11": true
@@ -949,10 +952,7 @@
         "146.75.36.81": true
       },
       "*google*": {
-        "34.49.133.3": true
-      },
-      "*itch.io": {
-        "142.171.75.212": true
+        "183.56.143.147": true
       },
       "*mega.io": {
         "66.203.127.11": true
@@ -980,6 +980,7 @@
         "118.214.247.61": true
       },
       "*tg.dev": {
+        "45.192.12.153": true,
         "93.183.68.61": true
       },
       "*w.wiki": {
@@ -990,6 +991,7 @@
         "142.171.75.212": true
       },
       "*.t.me": {
+        "45.192.12.153": true,
         "93.183.68.61": true
       },
       "*ok.ru": {
@@ -1006,6 +1008,7 @@
         "5.61.23.11": true
       },
       "t.me": {
+        "45.192.12.153": true,
         "93.183.68.61": true
       }
     },
@@ -1979,6 +1982,11 @@
           "sni": "vuejs.org"
         }
       },
+      "*.brave.com": {
+        ".*": {
+          "sni": "www.baidu.com"
+        }
+      },
       "*.ggpht.com": {
         ".*": {
           "sni": "g.cn"
@@ -2276,11 +2284,6 @@
           "sni": "g.cn"
         }
       },
-      "*itch.io": {
-        ".*": {
-          "sni": "none"
-        }
-      },
       "*mega.io": {
         ".*": {
           "sni": "none"
@@ -2403,12 +2406,14 @@
         "*.azureedge.net": "4",
         "*.jetbrains.com": "4",
         "*.onesignal.com": "4",
+        "*duckduckgo.com": "4",
         "img.shields.io": "4",
         "*.iubenda.com": "4",
         "*.yarnpkg.com": "4",
         "*.docker.com": "4",
         "*.github.com": "4",
         "*github*.com": "4",
+        "*.brave.com": "4",
         "*.github.io": "4",
         "*.pixiv.org": "4",
         "*.pximg.net": "4",
@@ -2456,12 +2461,14 @@
         "*.azureedge.net": "cf-DoT",
         "*.jetbrains.com": "cf-DoT",
         "*.onesignal.com": "cf-DoT",
+        "*duckduckgo.com": "cf-DoT",
         "img.shields.io": "cf-DoT",
         "*.iubenda.com": "cf-DoT",
         "*.yarnpkg.com": "cf-DoT",
         "*.docker.com": "cf-DoT",
         "*.github.com": "local",
         "*github*.com": "local",
+        "*.brave.com": "cf-DoT",
         "*.github.io": "local",
         "*.pixiv.org": "cf-DoT",
         "*.pximg.net": "cf-DoT",
@@ -2743,7 +2750,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202605301045,
+      "version": 202605301756,
       "id": "io.github.cute-omega"
     }
   }
