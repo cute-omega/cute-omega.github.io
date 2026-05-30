@@ -751,7 +751,11 @@
         "13.3.222.88": true
       },
       "*xvideos.com": {
-        "185.88.181.3": true
+        "185.88.181.3": true,
+        "89.222.127.8": true
+      },
+      "*xvideos.red": {
+        "89.222.127.8": true
       },
       "*youtube.com": {
         "183.56.143.147": true
@@ -937,7 +941,8 @@
         "172.66.137.6": true
       },
       "*xnxx.com": {
-        "185.88.181.3": true
+        "185.88.181.3": true,
+        "89.222.127.8": true
       },
       "*youtu.be": {
         "183.56.143.147": true
@@ -1972,6 +1977,11 @@
           "sni": "none"
         }
       },
+      "*xvideos.red": {
+        ".*": {
+          "sni": "none"
+        }
+      },
       "*youtube.com": {
         ".*": {
           "sni": "g.cn"
@@ -2750,7 +2760,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202605301756,
+      "version": 202605310058,
       "id": "io.github.cute-omega"
     }
   }
