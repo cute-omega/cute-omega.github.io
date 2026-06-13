@@ -9,14 +9,13 @@
 
 <body>
   <link rel="stylesheet" type="text/css" href="index.css" />
-  <script src="index.js"></script>
 
   <h1>📨 注册【蓝色前线聊天服务器】账号</h1>
-  <form id="form">
-    <input type="text" name="username" placeholder="用户名 (a-z, 0-9, _, -)" required pattern="^[a-z0-9_-]+$" minlength="2"
-      maxlength="30" />
+  <form id="form" novalidate>
+    <input type="text" name="username" placeholder="用户名 (a-z, 0-9, _, -)" required pattern="^[a-z0-9_\-]+$"
+      minlength="2" maxlength="30" />
     <input type="password" name="password" placeholder="密码 (至少8位)" required minlength="8" />
-    <input type="email" name="email" placeholder="邮箱 (选填)" optional />
+    <input type="email" name="email" placeholder="邮箱 (选填)" />
     <input type="text" name="token" placeholder="邀请码" required minlength="1" maxlength="64" />
     <button type="submit" id="submitBtn">
       <span class="btn-label">注册</span>
@@ -24,6 +23,7 @@
     </button>
   </form>
   <div id="msg" style="display: none"></div>
+  <script src="index.js" defer></script>
 </body>
 
 </html>
