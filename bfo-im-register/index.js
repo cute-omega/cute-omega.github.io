@@ -34,18 +34,60 @@ window.addEventListener('unhandledrejection', (event) => {
 function validateForm() {
   const username = form.username.value.trim();
   const password = form.password.value;
-  const token = form.token.value.trim();
+  const email = form.email.value.trim();
 
   if (!username) return '请输入用户名。';
   if (!/^[a-z0-9_-]+$/.test(username)) return '用户名只能包含小写字母、数字、下划线和连字符。';
-  if (username.length < 2 || username.length > 30) return '用户名长度必须在 2 到 30 个字符之间。';
+  if (username.length < 2 || username.length > 64) return '用户名长度必须在 2 到 64 个字符之间。';
   if (!password) return '请输入密码。';
-  if (password.length < 8) return '密码至少需要 8 位。';
-  if (password.length > 64) return '密码长度不能超过 64 个字符。';
-  if (!token) return '请输入邀请码。';
-  if (token.length > 64) return '邀请码长度不能超过 64 个字符。';
+  if (password.length < 8 || password.length > 64) return '密码长度必须在 8 到 64 个字符之间。';
+  if (!email) return '请输入邮箱。';
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return '邮箱格式不正确。';
 
   return '';
+}
+
+function makeClientSecret() {
+  const arr = new Uint8Array(16);
+  crypto.getRandomValues(arr);
+  return Array.from(arr, (value) => value.toString(16).padStart(2, '0')).join('');
+}
+
+function flowIncludesStage(flows, stage) {
+  if (!Array.isArray(flows)) return false;
+  return flows.some((flow) => Array.isArray(flow.stages) && flow.stages.includes(stage));
+}
+
+async function requestEmailToken(email) {
+  const clientSecret = makeClientSecret();
+  const sendAttempt = Math.floor(Date.now() / 1000);
+  const response = await fetch(`${HOMESERVER}/_matrix/client/v3/register/email/requestToken`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      client_secret: clientSecret,
+      email,
+      send_attempt: sendAttempt
+    })
+  });
+  const data = await readResponseBody(response);
+  if (!response.ok) {
+    throw new Error(data.error || data.errcode || data.raw || `邮件验证请求失败：HTTP ${response.status}`);
+  }
+  if (!data.sid) {
+    throw new Error('服务器未返回 sid，无法继续邮箱验证流程。');
+  }
+  return { sid: data.sid, clientSecret };
+}
+
+async function completeRegistration(payload) {
+  const response = await fetch(`${HOMESERVER}/_matrix/client/v3/register`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  });
+  const data = await readResponseBody(response);
+  return { response, data };
 }
 
 function setLoading(isLoading) {
@@ -70,34 +112,72 @@ form.onsubmit = async (event) => {
   setLoading(true);
 
   try {
-    const r1 = await fetch(`${HOMESERVER}/_matrix/client/r0/register`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ auth: {}, username: form.username.value })
-    });
-    const d1 = await readResponseBody(r1);
+    const username = form.username.value.trim();
+    const password = form.password.value;
+    const email = form.email.value.trim();
+
+    const { response: r1, data: d1 } = await completeRegistration({ username, password });
+
+    if (r1.ok && d1.access_token) {
+      msg.className = 'msg success';
+      msg.textContent = '✅ 注册成功！请用 Element 等客户端连接 matrix2.bestar.de5.net 登录。';
+      form.reset();
+      return;
+    }
+
     const session = d1.session;
     if (!session) {
       throw new Error(d1.error || d1.errcode || d1.raw || `首次注册请求失败：HTTP ${r1.status}`);
     }
 
-    const r2 = await fetch(`${HOMESERVER}/_matrix/client/r0/register`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        auth: {
-          type: 'm.login.registration_token',
-          session: session,
-          token: form.token.value
-        },
-        username: form.username.value,
-        password: form.password.value
-      })
+    if (!flowIncludesStage(d1.flows, 'm.login.email.identity')) {
+      throw new Error(`当前服务器未提供 m.login.email.identity 流程：${JSON.stringify(d1.flows || [])}`);
+    }
+
+    const { sid, clientSecret } = await requestEmailToken(email);
+    msg.className = 'msg';
+    msg.style.display = 'block';
+    msg.textContent = '验证邮件已发送，请先点击邮件中的确认链接，再点击弹窗中的“确定”继续注册。';
+
+    const confirmed = confirm('验证邮件已发送。请先完成邮件确认，然后点击“确定”继续注册。');
+    if (!confirmed) {
+      throw new Error('你已取消注册。完成邮件验证后可重新提交。');
+    }
+
+    const { response: r2, data: d2 } = await completeRegistration({
+      username,
+      password,
+      auth: {
+        type: 'm.login.email.identity',
+        session,
+        threepid_creds: {
+          sid,
+          client_secret: clientSecret
+        }
+      }
     });
-    const d2 = await readResponseBody(r2);
+
     if (!r2.ok) {
+      if (r2.status === 401 && Array.isArray(d2.completed) && d2.completed.includes('m.login.email.identity')) {
+        const { response: r3, data: d3 } = await completeRegistration({
+          username,
+          password,
+          auth: { session }
+        });
+        if (!r3.ok) {
+          throw new Error(d3.error || d3.errcode || d3.raw || `最终注册请求失败：HTTP ${r3.status}`);
+        }
+        if (d3.access_token) {
+          msg.className = 'msg success';
+          msg.textContent = '✅ 注册成功！请用 Element 等客户端连接 matrix2.bestar.de5.net 登录。';
+          form.reset();
+          return;
+        }
+        throw new Error('服务器未返回 access_token，请稍后重试。');
+      }
       throw new Error(d2.error || d2.errcode || d2.raw || `第二次注册请求失败：HTTP ${r2.status}`);
     }
+
     if (d2.access_token) {
       msg.className = 'msg success';
       msg.textContent = '✅ 注册成功！请用 Element 等客户端连接 matrix2.bestar.de5.net 登录。';

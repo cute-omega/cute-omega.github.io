@@ -15,9 +15,14 @@
     <input type="text" name="username" placeholder="用户名 (a-z, 0-9, _, -)" required pattern="^[a-z0-9_\-]+$"
       minlength="2" maxlength="30" />
     <input type="password" name="password" placeholder="密码 (至少8位)" required minlength="8" maxlength="64" />
-    <input type="text" name="token" placeholder="邀请码" required minlength="1" maxlength="64" />
+    <input type="email" name="email" placeholder="邮箱（用于验证注册）" maxlength="254" />
+    <input type="text" name="token" placeholder="邀请码（如果有）" minlength="1" maxlength="64" />
+    <p class="hint">提交后会根据服务器要求选择：若需要邮箱验证，会发送邮件；若需要邀请码，会使用邀请码完成注册。</p>
+    <div style="display:flex;gap:8px;margin-top:8px;">
+      <button type="button" id="confirmEmailBtn" style="flex:1">我已完成邮箱验证</button>
+    </div>
     <button type="submit" id="submitBtn">
-      <span class="btn-label">注册</span>
+      <span class="btn-label">发送验证并注册</span>
       <span class="btn-spinner" aria-hidden="true"></span>
     </button>
   </form>
