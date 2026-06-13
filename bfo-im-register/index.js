@@ -92,8 +92,7 @@ form.onsubmit = async (event) => {
           token: form.token.value
         },
         username: form.username.value,
-        password: form.password.value,
-        bind_email: !!form.email.value
+        password: form.password.value
       })
     });
     const d2 = await readResponseBody(r2);
