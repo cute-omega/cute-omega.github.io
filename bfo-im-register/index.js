@@ -77,11 +77,10 @@ form.onsubmit = async (event) => {
       body: JSON.stringify({ auth: {}, username: form.username.value })
     });
     const d1 = await readResponseBody(r1);
-    if (!r1.ok) {
+    const session = d1.session;
+    if (!session) {
       throw new Error(d1.error || d1.errcode || d1.raw || `首次注册请求失败：HTTP ${r1.status}`);
     }
-    const session = d1.session;
-    if (!session) throw new Error(d1.errcode || JSON.stringify(d1));
 
     const r2 = await fetch(`${HOMESERVER}/_matrix/client/r0/register`, {
       method: 'POST',
