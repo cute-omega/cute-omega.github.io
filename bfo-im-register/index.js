@@ -34,7 +34,6 @@ window.addEventListener('unhandledrejection', (event) => {
 function validateForm() {
   const username = form.username.value.trim();
   const password = form.password.value;
-  const email = form.email.value.trim();
   const token = form.token.value.trim();
 
   if (!username) return '请输入用户名。';
@@ -42,7 +41,7 @@ function validateForm() {
   if (username.length < 2 || username.length > 30) return '用户名长度必须在 2 到 30 个字符之间。';
   if (!password) return '请输入密码。';
   if (password.length < 8) return '密码至少需要 8 位。';
-  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return '邮箱格式不正确。';
+  if (password.length > 64) return '密码长度不能超过 64 个字符。';
   if (!token) return '请输入邀请码。';
   if (token.length > 64) return '邀请码长度不能超过 64 个字符。';
 
