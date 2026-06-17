@@ -218,6 +218,16 @@
       "*zws4*.web.telegram.org": {
         "93.183.68.61": true
       },
+      "github.githubassets.com": {
+        "2606:50c0:8000::154": true,
+        "2606:50c0:8001::154": true,
+        "2606:50c0:8002::154": true,
+        "2606:50c0:8003::154": true,
+        "185.199.108.154": true,
+        "185.199.109.154": true,
+        "185.199.110.154": true,
+        "185.199.111.154": true
+      },
       "*.youtube-nocookie.com": {
         "142.251.189.206": {
           "desc": "自动地区官方"
@@ -2841,7 +2851,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202606170330,
+      "version": 202606171142,
       "id": "io.github.cute-omega"
     }
   }
