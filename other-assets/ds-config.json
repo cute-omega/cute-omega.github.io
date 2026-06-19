@@ -661,6 +661,9 @@
       "pass.proton.me": {
         "185.70.42.63": true
       },
+      "polymarket.com": {
+        "64.239.109.1": true
+      },
       "www.ecosia.org": {
         "2001:67c:2960:6464::ac40:9647": true
       },
@@ -1833,6 +1836,11 @@
           "sni": "none"
         }
       },
+      "polymarket.com": {
+        ".*": {
+          "sni": "vercel.com"
+        }
+      },
       "www.docker.com": {
         ".*": {
           "sni": "www.docker.com"
@@ -2851,7 +2859,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202606192002,
+      "version": 202606200152,
       "id": "io.github.cute-omega"
     }
   }
