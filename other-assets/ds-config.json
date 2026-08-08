@@ -154,8 +154,7 @@
         "8.137.102.117": false
       },
       "internal-api.virginia.labs.lumalabs.ai": {
-        "34.204.141.236": true,
-        "34.233.59.41": true
+        "34.204.141.236": true
       },
       "community.cloudflare.steamstatic.com": {
         "172.64.145.151": true,
@@ -173,7 +172,7 @@
         "2.19.100.78": true
       },
       "production.cloudflare.docker.com": {
-        "104.16.98.215": true
+        "104.16.100.215": true
       },
       "external-content.duckduckgo.com": {
         "20.43.160.189": true
@@ -376,6 +375,9 @@
       "*steamcommunity.com": {
         "184.50.187.66": true
       },
+      "codeload.github.com": {
+        "20.205.243.165": true
+      },
       "fonts.googleapis.cn": {
         "220.181.174.162": true,
         "120.253.255.34": true,
@@ -384,7 +386,7 @@
         "203.208.41.98": true
       },
       "identity.flickr.com": {
-        "3.228.137.20": true,
+        "100.57.141.104": true,
         "52.6.22.65": true
       },
       "services.github.com": {
@@ -1059,7 +1061,8 @@
         "183.56.143.147": true
       },
       "*mega.io": {
-        "66.203.127.11": true
+        "66.203.127.11": true,
+        "66.203.127.24": true
       },
       "*mega.nz": {
         "31.216.144.5": true
@@ -1152,7 +1155,7 @@
       },
       "internal-api.virginia.labs.lumalabs.ai": {
         ".*": {
-          "sni": "none"
+          "sni": "www.baidu.com"
         }
       },
       "objects-origin.githubusercontent.com": {
@@ -1463,6 +1466,11 @@
         ".*": {
           "proxy": "ajax.proxy.ustclug.org",
           "desc": "根据2026年4月24日时访问https://mirrors.ustc.edu.cn 的说明，修正internal v202604122348中指向ajax.lug.ustc.edu.cn的配置"
+        }
+      },
+      "codeload.github.com": {
+        ".*": {
+          "sni": "none"
         }
       },
       "download.docker.com": {
@@ -3005,7 +3013,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202608081635,
+      "version": 202608090027,
       "id": "io.github.cute-omega"
     }
   }
