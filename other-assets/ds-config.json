@@ -147,7 +147,7 @@
           "desc": "AI Studio相关,阿里云,解锁地区限制,新加坡,仅大陆访问"
         }
       },
-      "^.*(with)?google(apis|usercontent)?.com.*$": {
+      "^(?!fonts).*(with)?google(apis|usercontent)?.com.*$": {
         "142.251.189.206": {
           "desc": "自动地区官方"
         },
@@ -165,11 +165,20 @@
         "140.82.113.22": true
       },
       "^(store|checkout).steampowered.com$": {
-        "23.15.141.198": true,
-        "23.206.181.48": true,
-        "23.35.101.126": true,
-        "72.246.28.155": true,
-        "2.19.100.78": true
+        "104.83.198.104": true,
+        "184.31.230.122": true,
+        "23.209.218.108": true,
+        "23.35.102.114": true,
+        "23.51.62.114": true,
+        "23.55.98.103": true
+      },
+      "clientconfig.akamai.steamstatic.com": {
+        " 23.208.12.191": true,
+        "23.208.12.174": true,
+        "2.16.168.104": true,
+        "2.16.168.109": true,
+        "23.32.91.17": true,
+        "23.32.91.19": true
       },
       "production.cloudflare.docker.com": {
         "104.16.100.215": true
@@ -202,11 +211,26 @@
       "cdn-uploads.huggingface.co": {
         "3.167.200.113": true
       },
+      "community.steamstatic.com": {
+        "199.232.163.52": true,
+        "199.232.211.52": true,
+        "199.232.215.52": true,
+        "146.75.115.52": true,
+        "151.101.79.52": true,
+        "151.101.91.52": true,
+        "146.75.47.52": true
+      },
       "disney.*.edge.bamgrid.com": {
         "2001:67c:2960:6464::36e6:4744": true
       },
       "cdn-registry-1.docker.io": {
         "registry.ipv4.docker.com": true
+      },
+      "*.githubusercontent.com": {
+        "185.199.108.133": true,
+        "185.199.109.133": true,
+        "185.199.110.133": true,
+        "185.199.111.133": true
       },
       "*patreonusercontent.com": {
         "104.18.70.106": true
@@ -378,13 +402,6 @@
       "codeload.github.com": {
         "20.205.243.165": true
       },
-      "fonts.googleapis.cn": {
-        "220.181.174.162": true,
-        "120.253.255.34": true,
-        "220.181.174.98": true,
-        "114.250.67.34": true,
-        "203.208.41.98": true
-      },
       "identity.flickr.com": {
         "100.57.141.104": true,
         "52.6.22.65": true
@@ -429,17 +446,6 @@
       },
       "support.github.com": {
         "185.199.108.133": true
-      },
-      "*.steamstatic.com": {
-        "151.101.111.52": true,
-        "151.101.195.52": true,
-        "146.75.115.52": true,
-        "151.101.67.52": true,
-        "151.101.79.52": true,
-        "151.101.91.52": true,
-        "146.75.47.52": true,
-        "146.75.51.52": true,
-        "151.101.3.52": true
       },
       "*redditstatic.com": {
         "146.75.33.140": true
@@ -864,6 +870,9 @@
       "_*.yahoo.com": {
         "2001:67c:2960:6464::b4de:6a0b": true
       },
+      "*.claude.ai": {
+        "2a01:4f8:c2c:123f:64:5:a04f:680a": true
+      },
       "*.fanbox.cc": {
         "210.140.139.155": true
       },
@@ -1187,12 +1196,9 @@
         }
       },
       "^(?<pre>.*).googlevideo.com$": {
-        "/generate_204": {
-          "success": true
-        },
-        "*": {
-          "proxy_backup": "${pre}.gvt1.com",
+        ".*": {
           "options": true,
+          "proxy": "${pre}.xn--ngstr-lra8j.com",
           "sni": "g.cn"
         }
       },
@@ -1423,16 +1429,6 @@
           "sni": "none"
         }
       },
-      "fonts.googleapis.com": {
-        ".*": {
-          "backup": [
-            "gstatic.loli.net",
-            "fonts-gstatic.proxy.ustclug.org"
-          ],
-          "proxy": "fonts.googleapis.cn",
-          "test": "https://fonts.googleapis.com/css?family=Oswald"
-        }
-      },
       "registry-1.docker.io": {
         ".*": {
           "sni": "none"
@@ -1568,12 +1564,6 @@
           "sni": "none"
         }
       },
-      "*.steamserver.net": {
-        ".*": {
-          "desc": "steam登录不稳定？无法复现先这么写",
-          "sni": "www.baidu.com"
-        }
-      },
       "*redditstatic.com": {
         ".*": {
           "sni": "none"
@@ -1592,16 +1582,6 @@
       "consent.yahoo.com": {
         ".*": {
           "sni": "consent.yahoo.com"
-        }
-      },
-      "fonts.gstatic.com": {
-        ".*": {
-          "backup": [
-            "gstatic.loli.net",
-            "fonts-gstatic.proxy.ustclug.org"
-          ],
-          "proxy": "fonts.gstatic.cn",
-          "test": "https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2"
         }
       },
       "forum.f-droid.org": {
@@ -2255,6 +2235,11 @@
           "sni": "www.baidu.com"
         }
       },
+      "*.claude.ai": {
+        ".*": {
+          "sni": "claude.ai"
+        }
+      },
       "*.ggpht.com": {
         ".*": {
           "sni": "g.cn"
@@ -2659,6 +2644,7 @@
     "host": "0.0.0.0",
     "dns": {
       "familyMapping": {
+        "*.xn--ngstr-lra8j.com": "6",
         "*.vuepress.vuejs.org": "4",
         "*.stackoverflow.com": "4",
         "*.gh.docmirror.top": "4",
@@ -2714,6 +2700,7 @@
         "interval": 60000
       },
       "mapping": {
+        "*.xn--ngstr-lra8j.com": "bebasid",
         "*.vuepress.vuejs.org": "cf-DoT",
         "*.stackoverflow.com": "cf-DoT",
         "*.gh.docmirror.top": "cf-DoT",
@@ -3013,7 +3000,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202608301122,
+      "version": 202608302129,
       "id": "io.github.cute-omega"
     }
   }
