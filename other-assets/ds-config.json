@@ -883,6 +883,9 @@
         "183.56.143.147": true,
         "8.137.102.117": false
       },
+      "*.pixiv.net": {
+        "210.140.139.155": true
+      },
       "*bbci.co.uk": {
         "23.77.21.232": true
       },
@@ -2240,6 +2243,11 @@
           "sni": "claude.ai"
         }
       },
+      "*.fanbox.cc": {
+        ".*": {
+          "sni": "none"
+        }
+      },
       "*.ggpht.com": {
         ".*": {
           "sni": "g.cn"
@@ -2252,7 +2260,7 @@
       },
       "*.pixiv.net": {
         ".*": {
-          "sni": "baidu.com"
+          "sni": "none"
         }
       },
       "*.pixiv.org": {
@@ -3000,7 +3008,7 @@
     },
     "metaInfo": {
       "updateLog": "周期性自动更新",
-      "version": 202609171111,
+      "version": 202609172100,
       "id": "io.github.cute-omega"
     }
   }
