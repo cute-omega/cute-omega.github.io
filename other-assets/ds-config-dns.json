@@ -197,6 +197,16 @@
       "graphql.api.dailymotion.com": {
         "34.84.14.157": true,
       },
+      "images.steamusercontent.com": {
+        "104.88.206.207": true,
+        "104.88.206.210": true,
+        "23.205.89.71": true,
+        "23.205.89.72": true,
+        "23.216.5.134": true,
+        "23.216.5.152": true,
+        "23.46.23.48": true,
+        "23.46.23.66": true,
+      },
       "sessions-bugsnag.docker.com": {
         "100.29.167.200": true,
         "54.156.140.159": null,
@@ -210,6 +220,12 @@
       },
       "cdn-uploads.huggingface.co": {
         "3.167.200.113": true,
+      },
+      "opengraph.githubassets.com": {
+        "185.199.108.154": true,
+        "185.199.109.154": true,
+        "185.199.110.154": true,
+        "185.199.111.154": true,
       },
       "community.steamstatic.com": {
         "199.232.163.52": true,
@@ -351,6 +367,12 @@
       "docs-editor.proton.me": {
         "185.70.42.70": true,
       },
+      "downloads.openwrt.org": {
+        "151.101.130.132": true,
+        "151.101.194.132": true,
+        "151.101.66.132": true,
+        "151.101.2.132": true,
+      },
       "fra-storage.proton.me": {
         "185.205.70.10": true,
       },
@@ -402,9 +424,38 @@
       "codeload.github.com": {
         "20.205.243.165": true,
       },
+      "download.docker.com": {
+        "52.84.217.111": true,
+        "13.32.205.44": true,
+        "13.32.205.49": true,
+        "13.32.205.88": true,
+        "52.84.217.14": true,
+        "52.84.217.91": true,
+        "13.32.205.4": true,
+        "52.84.217.8": true,
+      },
+      "fastly.jsdelivr.net": {
+        "151.101.129.229": true,
+        "151.101.193.229": true,
+        "151.101.65.229": true,
+        "151.101.1.229": true,
+      },
       "identity.flickr.com": {
         "100.57.141.104": true,
         "52.6.22.65": true,
+      },
+      "jsdelivr.pai233.top": {
+        "66.33.60.129": true,
+        "66.33.60.194": true,
+        "76.76.21.123": true,
+        "76.76.21.142": true,
+        "76.76.21.164": true,
+        "66.33.60.66": true,
+        "76.76.21.22": true,
+        "76.76.21.98": true,
+      },
+      "packages.elastic.co": {
+        "34.120.127.130": true,
       },
       "services.github.com": {
         "140.82.113.18": true,
@@ -444,6 +495,20 @@
       "registry.docker.io": {
         "registry.ipv4.docker.com": true,
       },
+      "registry.npmjs.org": {
+        "104.16.10.34": true,
+        "104.16.11.34": true,
+        "104.16.0.34": true,
+        "104.16.1.34": true,
+        "104.16.2.34": true,
+        "104.16.3.34": true,
+        "104.16.4.34": true,
+        "104.16.5.34": true,
+        "104.16.6.34": true,
+        "104.16.7.34": true,
+        "104.16.8.34": true,
+        "104.16.9.34": true,
+      },
       "support.github.com": {
         "185.199.108.133": true,
       },
@@ -469,8 +534,16 @@
       "images.prismic.io": {
         "151.101.78.208": true,
       },
+      "jsd.proxy.aks.moe": {
+        "206.237.16.120": true,
+      },
       "live.nicovideo.jp": {
         "3.167.200.113": true,
+      },
+      "ppa.launchpad.net": {
+        "185.125.189.186": true,
+        "185.125.189.187": true,
+        "185.125.189.188": true,
       },
       "upld.e-hentai.org": {
         "89.149.221.236": true,
@@ -531,6 +604,10 @@
       },
       "hello.vrchat.com": {
         "198.185.159.145": true,
+      },
+      "login.docker.com": {
+        "104.18.43.182": true,
+        "172.64.144.74": true,
       },
       "notary.docker.io": {
         "elb-io.us-east-1.aws.dckr.io": true,
@@ -615,6 +692,10 @@
       },
       "index.docker.io": {
         "registry.ipv4.docker.com": true,
+      },
+      "repo1.maven.org": {
+        "104.18.18.12": true,
+        "104.18.19.12": true,
       },
       "sp.nicovideo.jp": {
         "3.167.200.113": true,
@@ -721,6 +802,9 @@
       "polymarket.com": {
         "64.239.109.1": true,
       },
+      "www.docker.com": {
+        "23.185.0.4": true,
+      },
       "www.ecosia.org": {
         "2001:67c:2960:6464::ac40:9647": true,
       },
@@ -802,6 +886,10 @@
       "gql.twitch.tv": {
         "151.101.194.167": true,
       },
+      "raw.incept.pw": {
+        "172.67.218.198": true,
+        "104.21.38.43": true,
+      },
       "sso.proton.me": {
         "185.70.42.20": true,
       },
@@ -870,6 +958,10 @@
       },
       "_*.yahoo.com": {
         "2001:67c:2960:6464::b4de:6a0b": true,
+      },
+      "cn.vuejs.org": {
+        "104.21.55.229": true,
+        "172.67.174.37": true,
       },
       "*.claude.ai": {
         "2a01:4f8:c2c:123f:64:5:a04f:680a": true,
@@ -1032,6 +1124,12 @@
         "52.224.38.193": true,
         "20.43.185.14": true,
         "51.137.3.17": true,
+      },
+      "s.yimg.com": {
+        "69.147.65.251": true,
+        "69.147.65.252": true,
+        "69.147.87.251": true,
+        "69.147.87.252": true,
       },
       "telegra.ph": {
         "149.154.161.145": true,
@@ -3015,7 +3113,7 @@
     metaInfo: {
       updateLog: "周期性自动更新",
       version: 202610040257,
-      id: "io.github.cute-omega",
+      id: "io.github.cute-omega.dns",
     },
   },
 }
