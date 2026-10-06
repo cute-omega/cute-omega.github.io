@@ -1422,6 +1422,11 @@
           sni: "status.singpass.gov.sg",
         },
       },
+      "update.greasyfork.org": {
+        ".*": {
+          sni: "baidu.com",
+        },
+      },
       "zrh-storage.proton.me": {
         ".*": {
           sni: "none",
@@ -2770,7 +2775,7 @@
           "*ldstatic.com",
           "civitai.com",
           "*linux.do",
-          "*greasyfork.org",
+          "greasyfork.org",
         ],
         enabled: true,
         maxTtl: 3600000,
@@ -3195,7 +3200,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610062241,
+      version: 202610070445,
       id: "io.github.cute-omega",
     },
   },
