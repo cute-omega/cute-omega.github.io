@@ -187,6 +187,7 @@
         "20.43.160.189": true,
       },
       "(*account*|scholar).google.com": {
+        "142.251.189.206": true,
         "172.217.204.206": true,
       },
       "scholar.googleusercontent.com": {
@@ -197,21 +198,13 @@
       "graphql.api.dailymotion.com": {
         "34.84.14.157": true,
       },
-      "images.steamusercontent.com": {
-        "23.221.227.167": true,
-        "23.221.227.174": true,
-        "23.218.218.21": true,
-        "23.218.218.24": true,
-        "23.3.75.200": true,
-        "23.3.75.221": true,
-      },
-      "sessions-bugsnag.docker.com": {
-        "100.29.167.200": true,
-        "54.156.140.159": null,
-        "44.221.37.199": null,
-        "52.44.227.212": null,
-        "54.156.14.194": true,
-        "54.208.73.48": true,
+      "^(.*\\.)?usercontent\\.goog$": {
+        "47.102.115.14": {
+          desc: "阿里云中转,日本,实测0.45s,首选",
+        },
+        "8.137.102.117": {
+          desc: "阿里云中转,新加坡,实测0.50s,备用",
+        },
       },
       "cdn-avatars.huggingface.co": {
         "3.167.200.113": true,
@@ -306,6 +299,7 @@
         "23.221.227.5": true,
       },
       "discuss.huggingface.co": {
+        "hellohellohello.hosted-by-discourse.com": true,
         "3.167.200.113": true,
       },
       "kws1*.web.telegram.org": {
@@ -378,6 +372,7 @@
         "3.167.200.113": true,
       },
       "status.huggingface.co": {
+        "statuspage.betteruptime.com": true,
         "3.167.200.113": true,
       },
       "stitch.withgoogle.com": {
@@ -390,7 +385,9 @@
         "176.119.200.8": true,
       },
       "*.steamcommunity.com": {
-        "184.50.187.66": true,
+        "104.79.200.218": true,
+        "23.15.140.216": true,
+        "23.209.217.19": true,
       },
       "*archiveofourown.org": {
         "104.20.8.2": true,
@@ -422,12 +419,6 @@
       "codeload.github.com": {
         "20.205.243.165": true,
       },
-      "download.docker.com": {
-        "13.226.209.113": true,
-        "13.226.209.16": true,
-        "13.226.209.48": true,
-        "13.226.209.2": true,
-      },
       "fastly.jsdelivr.net": {
         "151.101.129.229": true,
         "151.101.193.229": true,
@@ -439,11 +430,12 @@
         "52.6.22.65": true,
       },
       "jsdelivr.pai233.top": {
-        "66.33.60.193": true,
+        "66.33.60.129": true,
+        "66.33.60.130": true,
         "66.33.60.194": true,
-        "76.76.21.164": true,
-        "66.33.60.67": true,
-        "76.76.21.22": true,
+        "76.76.21.123": true,
+        "66.33.60.34": true,
+        "76.76.21.61": true,
         "76.76.21.93": true,
         "76.76.21.98": true,
       },
@@ -597,10 +589,6 @@
       },
       "hello.vrchat.com": {
         "198.185.159.145": true,
-      },
-      "login.docker.com": {
-        "104.18.43.182": true,
-        "172.64.144.74": true,
       },
       "notary.docker.io": {
         "elb-io.us-east-1.aws.dckr.io": true,
@@ -770,15 +758,6 @@
       },
       "hub.docker.com": {
         "hub-origin.docker.com": true,
-        "100.29.167.200": null,
-        "144.34.172.106": true,
-        "54.156.140.159": null,
-        "44.221.37.199": null,
-        "47.236.233.96": false,
-        "52.44.227.212": null,
-        "54.156.14.194": null,
-        "69.63.207.139": false,
-        "54.208.73.48": null,
       },
       "lumo.proton.me": {
         "185.70.42.51": true,
@@ -794,9 +773,6 @@
       },
       "polymarket.com": {
         "64.239.109.1": true,
-      },
-      "www.docker.com": {
-        "23.185.0.4": true,
       },
       "www.ecosia.org": {
         "2001:67c:2960:6464::ac40:9647": true,
@@ -938,6 +914,9 @@
       "*thetvdb.com": {
         "13.35.222.88": true,
         "13.3.222.88": true,
+      },
+      "*twitter.com": {
+        "172.67.172.22": true,
       },
       "*xvideos.com": {
         "185.88.181.3": true,
@@ -1088,6 +1067,9 @@
       "*rutube.ru": {
         "109.238.90.239": true,
       },
+      "*twimg.com": {
+        "172.67.172.22": true,
+      },
       "*twitch.tv": {
         "151.101.194.167": true,
       },
@@ -1119,8 +1101,8 @@
         "51.137.3.17": true,
       },
       "s.yimg.com": {
-        "69.147.92.11": true,
-        "69.147.92.12": true,
+        "69.147.65.251": true,
+        "69.147.65.252": true,
       },
       "telegra.ph": {
         "149.154.161.145": true,
@@ -1205,8 +1187,14 @@
       "*ok.ru": {
         "5.61.23.30": true,
       },
+      "*x.com": {
+        "172.67.172.22": true,
+      },
       "w.wiki": {
         "185.15.59.224": true,
+      },
+      "*t.co": {
+        "172.67.172.22": true,
       },
       "*t.me": {
         "45.192.12.153": true,
@@ -1233,6 +1221,11 @@
           sni: "mediawiki.org",
         },
       },
+      "(userlocations|locationhistory-pa|locationhistoryaggregates-pa|locationhistoryplacedetails-pa).googleapis.com": {
+        ".*": {
+          abort: true,
+        },
+      },
       "^(?!.*(translate-pa).google(?:apis|usercontent)?.com).*google(?:apis|usercontent)?.com$": {
         ".*": {
           desc: "部分需要走其它代理的服务",
@@ -1248,11 +1241,6 @@
         ".*": {
           desc: "聊天需要 wss://irc-ws.chat.twitch.tv/",
           sni: "cloudfront.net",
-        },
-      },
-      "kubernetes-charts.storage.googleapis.com": {
-        ".*": {
-          proxy: "kubernetes-charts.proxy.ustclug.org",
         },
       },
       "internal-api.virginia.labs.lumalabs.ai": {
@@ -1297,17 +1285,13 @@
       },
       "ms-sso.copilot.microsoft.com": {
         ".*": {
+          verifyHost: "graph.windows.net",
           sni: "microsoft.com",
         },
       },
       "graphql.api.dailymotion.com": {
         ".*": {
           sni: "none",
-        },
-      },
-      "images.steamusercontent.com": {
-        ".*": {
-          sni: "baidu.com",
         },
       },
       "_disney.*.edge.bamgrid.com": {
@@ -1395,6 +1379,11 @@
       "_copilot.microsoft.com": {
         ".*": {
           sni: "www.azureedge.net",
+        },
+      },
+      "discuss.huggingface.co": {
+        ".*": {
+          sni: "none",
         },
       },
       "kws1*.web.telegram.org": {
@@ -1497,6 +1486,11 @@
           sni: "none",
         },
       },
+      "status.huggingface.co": {
+        ".*": {
+          sni: "status.singpass.gov.sg",
+        },
+      },
       "zrh-storage.proton.me": {
         ".*": {
           sni: "none",
@@ -1522,6 +1516,11 @@
           sni: "none",
         },
       },
+      "fonts.googleapis.com": {
+        ".*": {
+          proxy: "fonts.googleapis.cn",
+        },
+      },
       "registry-1.docker.io": {
         ".*": {
           sni: "none",
@@ -1535,11 +1534,6 @@
       "upload.wikimedia.org": {
         ".*": {
           sni: "none",
-        },
-      },
-      "*.cn-greasyfork.org": {
-        ".*": {
-          sni: "baidu.com",
         },
       },
       "*steamcommunity.com": {
@@ -1560,11 +1554,6 @@
       "codeload.github.com": {
         ".*": {
           sni: "none",
-        },
-      },
-      "download.docker.com": {
-        ".*": {
-          sni: "download.docker.com",
         },
       },
       "fastly.jsdelivr.net": {
@@ -1722,13 +1711,9 @@
           sni: "www.google.cn",
         },
       },
-      "*.greasyfork.org": {
-        ".*": {
-          sni: "baidu.com",
-        },
-      },
       "*.huggingface.co": {
         ".*": {
+          verifyHost: "huggingface.cn",
           sni: "huggingface.cn",
         },
       },
@@ -1788,11 +1773,6 @@
           sni: "none",
         },
       },
-      "login.docker.com": {
-        ".*": {
-          sni: "login.docker.com",
-        },
-      },
       "notary.docker.io": {
         ".*": {
           sni: "none",
@@ -1821,11 +1801,6 @@
       "wallet.proton.me": {
         ".*": {
           sni: "none",
-        },
-      },
-      "*.ads-pixiv.net": {
-        ".*": {
-          sni: "baidu.com",
         },
       },
       "*.buy.yahoo.com": {
@@ -1911,11 +1886,6 @@
       "drive.proton.me": {
         ".*": {
           sni: "none",
-        },
-      },
-      "gist.github.com": {
-        ".*": {
-          sni: "baidu.com",
         },
       },
       "index.docker.io": {
@@ -2063,14 +2033,15 @@
           sni: "vercel.com",
         },
       },
-      "www.docker.com": {
-        ".*": {
-          sni: "www.docker.com",
-        },
-      },
       "www.ecosia.org": {
         ".*": {
           sni: "www.ecosia.org",
+        },
+      },
+      "www.google.com": {
+        "/recaptcha/.*": {
+          proxy: "www.recaptcha.net",
+          desc: "reCAPTCHA 静态资源走国内镜像，与下方 www.gstatic.com 的同源规则配套",
         },
       },
       "*.intercom.io": {
@@ -2213,16 +2184,6 @@
           sni: "none",
         },
       },
-      "*.docker.com": {
-        ".*": {
-          sni: "www.docker.com",
-        },
-      },
-      "*.msecnd.net": {
-        ".*": {
-          sni: "baidu.com",
-        },
-      },
       "*android.com": {
         ".*": {
           sni: "g.cn",
@@ -2326,11 +2287,6 @@
       "cn.vuejs.org": {
         ".*": {
           sni: "vuejs.org",
-        },
-      },
-      "*.brave.com": {
-        ".*": {
-          sni: "www.baidu.com",
         },
       },
       "*.claude.ai": {
@@ -2568,9 +2524,9 @@
         },
         "^(/[\\w-.]+){2,}/?(\\?.*)?$": null,
         "^(/[^/]+){2,}/?(\\?.*)?$": {
-          tampermonkeyScript: "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/tampermonkey.js",
+          tampermonkeyScript: "https://ds-official-config.bestar.de5.net/tampermonkey.js",
           remark: "注：上面所使用的脚本地址，为高速镜像地址。",
-          script: "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/GithubEnhanced-High-Speed-Download.user.js",
+          script: "https://ds-official-config.bestar.de5.net/GithubEnhanced-High-Speed-Download.user.js",
           desc: "油猴脚本：高速下载 Git Clone/SSH、Release、Raw、Code(ZIP) 等文件 (公益加速)、项目列表单文件快捷下载、添加 git clone 命令",
         },
       },
@@ -2751,15 +2707,18 @@
         "*.vuepress.vuejs.org": "4",
         "*.stackoverflow.com": "4",
         "*.gh.docmirror.top": "4",
+        "*.googlevideo.com": "6",
         "*.cloudflare.com": "4",
         "*.cloudfront.net": "4",
         "*.electronjs.org": "4",
+        "*.googleapis.com": "4",
         "*.amazonaws.com": "4",
         "*.azureedge.net": "4",
         "*.jetbrains.com": "4",
         "*.onesignal.com": "4",
         "*duckduckgo.com": "4",
         "img.shields.io": "4",
+        "*.gstatic.com": "4",
         "*.iubenda.com": "4",
         "*.yarnpkg.com": "4",
         "*.docker.com": "4",
@@ -2774,9 +2733,22 @@
         "*.v2ex.com": "4",
       },
       providers: {
+        "quad9-ip": {
+          server: "https://9.9.9.9/dns-query",
+        },
+        rubyfish: {
+          server: "https://rubyfish.cn/dns-query",
+        },
         bebasid: {
           server: "tls://dns.bebasid.com",
           sni: "baidu.com",
+        },
+        safe360: {
+          forSNI: true,
+          server: "tls://dot.360.cn",
+        },
+        aliyun: {
+          server: "223.5.5.5",
         },
         "cf-DoH": {
           server: "https://cloudflare-dns.com/dns-query",
@@ -2785,6 +2757,9 @@
         "cf-DoT": {
           server: "tls://1.1.1.1",
           sni: "baidu.com",
+        },
+        "cf-ip": {
+          server: "https://1.1.1.1/dns-query",
         },
         local: {
           cacheSize: 10000,
@@ -2801,12 +2776,14 @@
           "github.com",
         ],
         interval: 60000,
+        enabled: true,
       },
       mapping: {
         "*.xn--ngstr-lra8j.com": "bebasid",
         "*.vuepress.vuejs.org": "cf-DoT",
         "*.stackoverflow.com": "cf-DoT",
         "*.gh.docmirror.top": "cf-DoT",
+        "*.googlevideo.com": "bebasid",
         "*.cloudflare.com": "cf-DoT",
         "*.cloudfront.net": "cf-DoT",
         "*.electronjs.org": "cf-DoT",
@@ -2814,11 +2791,9 @@
         "*.azureedge.net": "cf-DoT",
         "*.jetbrains.com": "cf-DoT",
         "*.onesignal.com": "cf-DoT",
-        "*duckduckgo.com": "cf-DoT",
         "img.shields.io": "cf-DoT",
         "*.iubenda.com": "cf-DoT",
         "*.yarnpkg.com": "cf-DoT",
-        "*.docker.com": "cf-DoT",
         "*.github.com": "local",
         "*github*.com": "local",
         "*.brave.com": "cf-DoT",
@@ -2829,6 +2804,48 @@
         "*.pypi.org": "cf-DoT",
         "*.v2ex.com": "cf-DoT",
         "github.com": "local",
+      },
+      nat64: {
+        domains: [
+          "*chatgpt.com",
+        ],
+        enabled: true,
+        prefix: "",
+        dns: "cf-DoH",
+      },
+      ech: {
+        preSetIpDomains: [
+          "*ldstatic.com",
+          "*t.co",
+          "*twitter.com",
+          "*twimg.com",
+          "*x.com",
+        ],
+        tryAllProviders: true,
+        parallelDelay: 200,
+        publicName: "cloudflare-ech.com",
+        cacheSize: 512,
+        emptyTtl: 600000,
+        domains: [
+          "*t.co",
+          "*twitter.com",
+          "*twimg.com",
+          "*sci-hub.pub",
+          "*x.com",
+          "*docker.com",
+          "*pixiv.net",
+          "*chatgpt.com",
+          "*civitai.com",
+          "*ldstatic.com",
+          "civitai.com",
+          "*linux.do",
+          "*greasyfork.org",
+        ],
+        enabled: true,
+        maxTtl: 3600000,
+        minTtl: 60000,
+        dns: "cf-DoH",
+        use: true,
       },
     },
   },
@@ -2912,7 +2929,7 @@
         children: [
           {
             title: "1、解决Github访问不了或速度很慢的问题（切换高速IP）",
-            url: "https://gitee.com/wangliang181230/dev-sidecar/wikis/%E8%A7%A3%E5%86%B3Github%E8%AE%BF%E9%97%AE%E4%B8%8D%E4%BA%86%E6%88%96%E9%80%9F%E5%BA%A6%E5%BE%88%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98",
+            url: "https://github.com/docmirror/dev-sidecar/wiki/%E8%A7%A3%E5%86%B3Github%E8%AE%BF%E9%97%AE%E4%B8%8D%E4%BA%86%E6%88%96%E9%80%9F%E5%BA%A6%E5%BE%88%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98",
           },
           {
             title: "2、Linux安装证书失败的避坑（Linux手动安装证书详细教程）",
@@ -2983,6 +3000,40 @@
           {
             children: [
               {
+                title: "[ 2026-10-03 ] v2.3.0（支持 ECH 加密 SNI、请求自动重试，新增「日志与流量」「GitHub 状态监控」页）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v2.3.0",
+              },
+            ],
+            rowClass: "title2",
+            title: "v2.3.x",
+          },
+          {
+            children: [
+              {
+                title: "[ 2026-07-02 ] v2.2.0（实验性自动更新、HTTP/2 代理、按需 IP 探测，修复诸多安全漏洞）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v2.2.0",
+              },
+            ],
+            rowClass: "title2",
+            title: "v2.2.x",
+          },
+          {
+            children: [
+              {
+                title: "[ 2026-06-29 ] v2.1.1（修复 v2.1.0 中的问题及诸多安全漏洞）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v2.1.1",
+              },
+              {
+                title: "[ 2026-06-28 ] v2.1.0（稳定性提升，free eye 插件回归）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v2.1.0",
+              },
+            ],
+            rowClass: "title2",
+            title: "v2.1.x",
+          },
+          {
+            children: [
+              {
                 title: "待办事项",
                 url: "https://github.com/docmirror/dev-sidecar/milestone/9",
               },
@@ -2993,6 +3044,14 @@
               {
                 title: "[ 2026-04-12 ] v2.0.1（可在支持IPv6网络直连看YouTube视频了）",
                 url: "https://github.com/docmirror/dev-sidecar/releases/tag/v2.0.1",
+              },
+              {
+                title: "[ 2026-02-02 ] v2.0.0.3（修复脚本插入的 BUG）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v2.0.0.3",
+              },
+              {
+                title: "[ 2025-12-31 ] v2.0.1-test（测试版：从 v2.0.0.2 继承，引入 free eye 插件、修复导入 BUG；版本号故意不合规以避免触发自动更新）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v2.0.1-test",
               },
               {
                 title: "[ 2025-05-15 ] v2.0.0.2",
@@ -3086,9 +3145,111 @@
                 title: "[ 2022-03-14 ] v1.7.3",
                 url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.7.3",
               },
+              {
+                title: "[ 2021-12-06 ] v1.7.2",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.7.2",
+              },
+              {
+                title: "[ 2021-11-23 ] v1.7.1（升级 electron 版本，修复证书过期与 GitHub 静态资源加载问题）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.7.1",
+              },
+              {
+                title: "[ 2021-11-21 ] v1.7.0",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.7.0",
+              },
             ],
             rowClass: "title2",
             title: "v1.7.x",
+          },
+          {
+            children: [
+              {
+                title: "[ 2021-09-12 ] v1.6.2（默认配置支持远程更新，mac 顶栏图标跟随主题切换）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.6.2",
+              },
+              {
+                title: "[ 2021-08-21 ] v1.6.1（修复 Windows 下无法开机自启的问题）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.6.1",
+              },
+              {
+                title: "[ 2021-08-19 ] 1.6.0（支持 Ubuntu，Mac 应用名改为小写）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/1.6.0",
+              },
+            ],
+            rowClass: "title2",
+            title: "v1.6.x",
+          },
+          {
+            children: [
+              {
+                title: "[ 2021-04-05 ] v1.5.1（支持增量更新）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.5.1",
+              },
+              {
+                title: "[ 2021-03-27 ] v1.5.0（新增模式切换与 IP 测速功能）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.5.0",
+              },
+            ],
+            rowClass: "title2",
+            title: "v1.5.x",
+          },
+          {
+            children: [
+              {
+                title: "[ 2021-01-10 ] v1.4.0（支持 mac）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.4.0",
+              },
+            ],
+            rowClass: "title2",
+            title: "v1.4.x",
+          },
+          {
+            children: [
+              {
+                title: "[ 2020-12-04 ] v1.3.1（新增 git 代理开关与增强功能）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.3.1",
+              },
+              {
+                title: "[ 2020-12-04 ] v1.3.0（新增 git 代理开关与增强功能）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.3.0",
+              },
+            ],
+            rowClass: "title2",
+            title: "v1.3.x",
+          },
+          {
+            children: [
+              {
+                title: "[ 2020-11-29 ] v1.2.2（修复 win7 设置代理不生效、360 设置代理缓慢）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/v1.2.2",
+              },
+              {
+                title: "[ 2020-11-19 ] 1.2.0（修复 GitHub README 引用图片打不开，新增插入脚本功能）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/1.2.0",
+              },
+            ],
+            rowClass: "title2",
+            title: "v1.2.x",
+          },
+          {
+            children: [
+              {
+                title: "[ 2020-11-14 ] 1.1.0（新增日志，修复升级后未完全退出导致的升级失败）",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/1.1.0",
+              },
+            ],
+            rowClass: "title2",
+            title: "v1.1.x",
+          },
+          {
+            children: [
+              {
+                title: "[ 2020-11-11 ] 1.0.2",
+                url: "https://github.com/docmirror/dev-sidecar/releases/tag/1.0.2",
+              },
+            ],
+            rowClass: "title2",
+            title: "v1.0.x",
           },
         ],
         rowClass: "title1",
@@ -3099,11 +3260,11 @@
   },
   app: {
     remoteConfig: {
-      url: "https://raw.giteeusercontent.com/wangliang181230/dev-sidecar-config/raw/main/remote_config.json",
+      url: "https://ds-official-config.bestar.de5.net/remote_config.json5",
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610051150,
+      version: 202610062212,
       id: "io.github.cute-omega.dns",
     },
   },
