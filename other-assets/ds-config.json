@@ -137,6 +137,11 @@
           desc: "阿里云中转",
         },
       },
+      "^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions|wikibooks).org$": {
+        ".*": {
+          sni: "mediawiki.org",
+        },
+      },
       "^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions).org$": {
         "208.80.153.224": true,
         "185.15.58.224": true,
@@ -1108,6 +1113,9 @@
       "*w.wiki": {
         "208.80.153.224": true,
         "185.15.58.224": true,
+        ".*": {
+          sni: "mediawiki.org",
+        },
       },
       "itch.io": {
         "142.171.75.212": true,
@@ -1156,6 +1164,10 @@
         ".*": {
           abort: true,
         },
+      },
+      "^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions).org$": {
+        "208.80.153.224": true,
+        "185.15.58.224": true,
       },
       "^(?!.*(translate-pa).google(?:apis|usercontent)?.com).*google(?:apis|usercontent)?.com$": {
         ".*": {
@@ -1272,24 +1284,13 @@
         "^(/[^/]+)*/[^./]+\\.(svg|png|gif|jpg|jpeg|ico|js|css)(\\?.*)?$": {
           cacheDays: 365,
           desc: "图片、JS文件、CSS文件，缓存1年",
+          sni: "baidu.com",
         },
         "/assets/fakefile.js": {
           cacheDays: 365,
           success: {
             script: ";",
           },
-        },
-        ".*.backup": {
-          responseReplace: {
-            headers: {
-              "cross-origin-resource-policy": "cross-origin",
-              "access-control-allow-origin": "*",
-              "set-cookie": "[remove]",
-            },
-          },
-          proxy: "github.com",
-          desc: "github.com域名下，该请求已经不存在，此配置暂时先备份掉。",
-          sni: "baidu.com",
         },
       },
       "registry.hub.docker.com": {
@@ -1468,6 +1469,8 @@
         },
       },
       "upload.wikimedia.org": {
+        "208.80.153.240": true,
+        "185.15.58.240": true,
         ".*": {
           sni: "none",
         },
@@ -1475,7 +1478,7 @@
       "*steamcommunity.com": {
         "^(?!/discussions|/Profile|/app.*/discussions).*$": {
           desc: "讨论区锁区,考虑不拦截丢给彩蛋",
-          sni: "www.baidu.com",
+          sni: "baidu.com",
         },
         ".*": {
           sni: "none",
@@ -1544,7 +1547,7 @@
       },
       "*.steampowered.com": {
         ".*": {
-          sni: "www.baidu.com",
+          sni: "baidu.com",
         },
       },
       "*onedrive.live.com": {
@@ -2157,7 +2160,7 @@
       },
       "*f-droid.org": {
         ".*": {
-          sni: "www.baidu.com",
+          sni: "baidu.com",
         },
       },
       "*gstatic.com": {
@@ -2444,9 +2447,8 @@
       "github.com": {
         "^((/[^/]+){2,})/raw((/[^/]+)+\\.(jpg|jpeg|png|gif))(\\?.*)?$": {
           cacheDays: 365,
-          proxy: null,
           desc: "仓库内图片重定向，缓存1年。",
-          sni: null,
+          sni: "baidu.com",
         },
         "^((/[^/]+){2,})/raw((/[^/]+)+\\.js)(\\?.*)?$": {
           responseReplace: {
@@ -2454,9 +2456,8 @@
               "content-type": "application/javascript; charset=utf-8",
             },
           },
-          proxy: null,
           desc: "仓库内脚本，设置响应头Content-Type。作用：方便script拦截器直接使用，避免引起跨域问题和脚本内容限制问题。",
-          sni: null,
+          sni: "baidu.com",
         },
         "^(/[\\w-.]+){2,}/?(\\?.*)?$": null,
         "^(/[^/]+){2,}/?(\\?.*)?$": {
@@ -2464,6 +2465,10 @@
           remark: "注：上面所使用的脚本地址，为高速镜像地址。",
           script: "https://ds-official-config.bestar.de5.net/GithubEnhanced-High-Speed-Download.user.js",
           desc: "油猴脚本：高速下载 Git Clone/SSH、Release、Raw、Code(ZIP) 等文件 (公益加速)、项目列表单文件快捷下载、添加 git clone 命令",
+          sni: "baidu.com",
+        },
+        ".*": {
+          sni: "baidu.com",
         },
       },
       "s.yimg.com": {
@@ -2578,6 +2583,8 @@
         },
       },
       "*w.wiki": {
+        "208.80.153.224": true,
+        "185.15.58.224": true,
         ".*": {
           sni: "mediawiki.org",
         },
@@ -3200,7 +3207,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610092255,
+      version: 202610100430,
       id: "io.github.cute-omega",
     },
   },
