@@ -137,11 +137,6 @@
           desc: "阿里云中转",
         },
       },
-      "^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions|wikibooks).org$": {
-        ".*": {
-          sni: "mediawiki.org",
-        },
-      },
       "^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions).org$": {
         "208.80.153.224": true,
         "185.15.58.224": true,
@@ -1113,9 +1108,6 @@
       "*w.wiki": {
         "208.80.153.224": true,
         "185.15.58.224": true,
-        ".*": {
-          sni: "mediawiki.org",
-        },
       },
       "itch.io": {
         "142.171.75.212": true,
@@ -1164,10 +1156,6 @@
         ".*": {
           abort: true,
         },
-      },
-      "^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions).org$": {
-        "208.80.153.224": true,
-        "185.15.58.224": true,
       },
       "^(?!.*(translate-pa).google(?:apis|usercontent)?.com).*google(?:apis|usercontent)?.com$": {
         ".*": {
@@ -1469,8 +1457,6 @@
         },
       },
       "upload.wikimedia.org": {
-        "208.80.153.240": true,
-        "185.15.58.240": true,
         ".*": {
           sni: "none",
         },
@@ -2583,8 +2569,6 @@
         },
       },
       "*w.wiki": {
-        "208.80.153.224": true,
-        "185.15.58.224": true,
         ".*": {
           sni: "mediawiki.org",
         },
@@ -3207,7 +3191,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610101207,
+      version: 202610102210,
       id: "io.github.cute-omega",
     },
   },

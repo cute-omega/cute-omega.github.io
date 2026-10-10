@@ -137,11 +137,6 @@
           desc: "阿里云中转",
         },
       },
-      "^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions|wikibooks).org$": {
-        ".*": {
-          sni: "mediawiki.org",
-        },
-      },
       "^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions).org$": {
         "208.80.153.224": true,
         "185.15.58.224": true,
@@ -435,13 +430,11 @@
         "52.6.22.65": true,
       },
       "jsdelivr.pai233.top": {
-        "66.33.60.130": true,
         "66.33.60.193": true,
-        "76.76.21.123": true,
-        "76.76.21.142": true,
+        "66.33.60.194": true,
         "76.76.21.164": true,
-        "66.33.60.66": true,
-        "76.76.21.93": true,
+        "66.33.60.67": true,
+        "76.76.21.61": true,
         "76.76.21.98": true,
       },
       "packages.elastic.co": {
@@ -1184,9 +1177,6 @@
       "*w.wiki": {
         "208.80.153.224": true,
         "185.15.58.224": true,
-        ".*": {
-          sni: "mediawiki.org",
-        },
       },
       "itch.io": {
         "142.171.75.212": true,
@@ -1235,10 +1225,6 @@
         ".*": {
           abort: true,
         },
-      },
-      "^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions).org$": {
-        "208.80.153.224": true,
-        "185.15.58.224": true,
       },
       "^(?!.*(translate-pa).google(?:apis|usercontent)?.com).*google(?:apis|usercontent)?.com$": {
         ".*": {
@@ -1540,8 +1526,6 @@
         },
       },
       "upload.wikimedia.org": {
-        "208.80.153.240": true,
-        "185.15.58.240": true,
         ".*": {
           sni: "none",
         },
@@ -2654,8 +2638,6 @@
         },
       },
       "*w.wiki": {
-        "208.80.153.224": true,
-        "185.15.58.224": true,
         ".*": {
           sni: "mediawiki.org",
         },
@@ -3278,7 +3260,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610101207,
+      version: 202610102210,
       id: "io.github.cute-omega.dns",
     },
   },
