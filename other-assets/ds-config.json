@@ -604,6 +604,9 @@
       "*wiktionary.org": {
         "185.15.59.224": true,
       },
+      "^(.+\\.)?x\\.com$": {
+        "172.67.172.22": true,
+      },
       "docs.github.com": {
         "185.199.110.154": true,
       },
@@ -1118,9 +1121,6 @@
       "*ok.ru": {
         "5.61.23.30": true,
       },
-      "*x.com": {
-        "172.67.172.22": true,
-      },
       "w.wiki": {
         "185.15.59.224": true,
       },
@@ -1187,6 +1187,11 @@
       "^(?!.*cloudflare).*steamstatic.com$": {
         ".*": {
           desc: "steam社区数据不能也不需调整sni,直接直连",
+          sni: "baidu.com",
+        },
+      },
+      "^(store|checkout).steampowered.com$": {
+        ".*": {
           sni: "baidu.com",
         },
       },
@@ -1527,11 +1532,6 @@
         },
       },
       "*.nikke-global.com": {
-        ".*": {
-          sni: "baidu.com",
-        },
-      },
-      "*.steampowered.com": {
         ".*": {
           sni: "baidu.com",
         },
@@ -2647,6 +2647,7 @@
         "img.shields.io": "4",
         "*.gstatic.com": "4",
         "*.iubenda.com": "4",
+        "*.vsassets.io": "4",
         "*.yarnpkg.com": "4",
         "*.docker.com": "4",
         "*.github.com": "4",
@@ -2720,6 +2721,7 @@
         "*.onesignal.com": "cf-DoT",
         "img.shields.io": "cf-DoT",
         "*.iubenda.com": "cf-DoT",
+        "*.vsassets.io": "cf-DoT",
         "*.yarnpkg.com": "cf-DoT",
         "*.github.com": "local",
         "*github*.com": "local",
@@ -2746,7 +2748,7 @@
           "*t.co",
           "*twitter.com",
           "*twimg.com",
-          "*x.com",
+          "^(.+.)?x.com$",
         ],
         tryAllProviders: true,
         parallelDelay: 200,
@@ -2758,7 +2760,7 @@
           "*twitter.com",
           "*twimg.com",
           "*sci-hub.pub",
-          "*x.com",
+          "^(.+.)?x.com$",
           "*docker.com",
           "*pixiv.net",
           "*chatgpt.com",
@@ -3191,7 +3193,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610121206,
+      version: 202610130118,
       id: "io.github.cute-omega",
     },
   },
