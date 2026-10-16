@@ -113,7 +113,6 @@
         "*.pixiv.org": true,
         "*.v2fly.org": true,
         "*.bing.com": false,
-        "*.v2ex.com": true,
         "telegra.ph": true,
       },
       pac: {
@@ -320,6 +319,9 @@
       "store.steampowered.com": {
         "23.39.61.133": true,
       },
+      "web-static.archive.org": {
+        "207.241.237.2": true,
+      },
       "zws1*.web.telegram.org": {
         "149.154.174.200": true,
       },
@@ -432,10 +434,13 @@
       "jsdelivr.pai233.top": {
         "66.33.60.129": true,
         "66.33.60.130": true,
+        "76.76.21.142": true,
         "76.76.21.164": true,
-        "66.33.60.34": true,
+        "76.76.21.241": true,
         "66.33.60.35": true,
         "66.33.60.67": true,
+        "76.76.21.22": true,
+        "76.76.21.61": true,
       },
       "packages.elastic.co": {
         "34.120.127.130": true,
@@ -665,11 +670,9 @@
         "185.70.42.40": true,
       },
       "gist.github.com": {
-        "20.200.245.247": true,
-        "20.205.243.166": false,
+        "20.205.243.166": true,
         "20.27.177.113": true,
-        "140.82.116.3": true,
-        "140.82.116.4": true,
+        "140.82.121.3": true,
         "4.237.22.38": true,
       },
       "index.docker.io": {
@@ -871,6 +874,7 @@
       },
       "*archive.org": {
         "207.241.237.2": true,
+        "207.241.237.3": true,
       },
       "*behance.net": {
         "2001:67c:2960:6464::9765:41c5": true,
@@ -1083,17 +1087,7 @@
       "github.com": {
         "20.200.245.247": true,
         "20.205.243.166": true,
-        "20.201.28.151": false,
-        "20.26.156.215": false,
         "20.27.177.113": true,
-        "140.82.113.3": false,
-        "140.82.114.4": false,
-        "140.82.116.3": false,
-        "140.82.116.4": false,
-        "140.82.121.3": false,
-        "140.82.121.4": false,
-        "20.87.245.0": false,
-        "4.237.22.38": false,
       },
       "github.dev": {
         "20.99.227.183": true,
@@ -1102,10 +1096,8 @@
         "51.137.3.17": true,
       },
       "s.yimg.com": {
-        "69.147.80.12": true,
-        "69.147.80.15": true,
-        "74.6.160.106": true,
-        "74.6.160.107": true,
+        "69.147.92.11": true,
+        "69.147.92.12": true,
       },
       "telegra.ph": {
         "149.154.161.145": true,
@@ -1260,6 +1252,16 @@
         },
       },
       "^(store|checkout).steampowered.com$": {
+        ".*": {
+          sni: "baidu.com",
+        },
+      },
+      "^(cloud|go|goto|id)\\.docker\\.com$": {
+        ".*": {
+          sni: "goto.docker.com",
+        },
+      },
+      "^(registry-1|index)\\.docker\\.io$": {
         ".*": {
           sni: "baidu.com",
         },
@@ -1880,6 +1882,11 @@
       "drive.proton.me": {
         ".*": {
           sni: "none",
+        },
+      },
+      "gist.github.com": {
+        ".*": {
+          sni: "baidu.com",
         },
       },
       "index.docker.io": {
@@ -2718,7 +2725,6 @@
         "*.iubenda.com": "4",
         "*.vsassets.io": "4",
         "*.yarnpkg.com": "4",
-        "*.docker.com": "4",
         "*.github.com": "4",
         "*github*.com": "4",
         "*.brave.com": "4",
@@ -2727,7 +2733,7 @@
         "*.pximg.net": "4",
         "*.gvt1.com": "6",
         "*.pypi.org": "4",
-        "*.v2ex.com": "4",
+        "*docker*": "4",
       },
       providers: {
         "quad9-ip": {
@@ -2749,7 +2755,7 @@
         },
         "cf-DoH": {
           server: "https://cloudflare-dns.com/dns-query",
-          sni: "baidu.com",
+          sni: "cf",
         },
         "cf-DoT": {
           server: "tls://1.1.1.1",
@@ -2800,12 +2806,13 @@
         "*.pximg.net": "cf-DoT",
         "*.gvt1.com": "bebasid",
         "*.pypi.org": "cf-DoT",
-        "*.v2ex.com": "cf-DoT",
         "github.com": "local",
+        "*docker*": "cf-DoH",
       },
       nat64: {
         domains: [
           "*chatgpt.com",
+          "*openai.com",
         ],
         enabled: true,
         prefix: "",
@@ -2830,10 +2837,20 @@
           "*twimg.com",
           "*sci-hub.pub",
           "^(.+.)?x.com$",
-          "*docker.com",
+          "*matrix.org",
+          "*mod.io",
+          "*itch.io",
+          "*patreon.com",
+          "*substack.com",
+          "*medium.com",
+          "*v2ex.com",
+          "auth.docker.io",
+          "hub.docker.com",
           "*pixiv.net",
+          "*openai.com",
           "*chatgpt.com",
           "*civitai.com",
+          "*civitai.red",
           "*ldstatic.com",
           "civitai.com",
           "*linux.do",
@@ -3262,7 +3279,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610161057,
+      version: 202610162058,
       id: "io.github.cute-omega.dns",
     },
   },
