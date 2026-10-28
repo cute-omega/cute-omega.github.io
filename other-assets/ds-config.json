@@ -1133,7 +1133,7 @@
       },
     },
     intercepts: {
-      "^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com)$": {
+      "^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com|antigravity.google)$": {
         ".*": {
           sni: "www.google.cn",
         },
@@ -3209,7 +3209,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610281147,
+      version: 202610282248,
       id: "io.github.cute-omega",
     },
   },
