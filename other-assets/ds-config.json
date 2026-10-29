@@ -179,6 +179,9 @@
         "23.32.91.17": true,
         "23.32.91.19": true,
       },
+      "geminiweb-pa.clients6.google.com": {
+        "47.102.115.14": true,
+      },
       "production.cloudflare.docker.com": {
         "104.16.100.215": true,
       },
@@ -196,7 +199,7 @@
       },
       "graphql.api.dailymotion.com": {
         "34.84.14.157": true,
-        "18.65.14.4": true,
+        "18.65.14.65": true,
       },
       "^(.*\\.)?usercontent\\.goog$": {
         "47.102.115.14": {
@@ -311,6 +314,9 @@
       "kws5*.web.telegram.org": {
         "149.154.170.100": true,
       },
+      "my.urbandictionary.com": {
+        "5.161.34.136": true,
+      },
       "store.steampowered.com": {
         "23.39.61.133": true,
       },
@@ -352,6 +358,7 @@
       },
       "copilot.microsoft.com": {
         "2001:67c:2960:6464::cc4f:c5ed": true,
+        "copilot.com": true,
       },
       "docs-editor.proton.me": {
         "185.70.42.70": true,
@@ -383,6 +390,9 @@
       "*archiveofourown.org": {
         "104.20.8.2": true,
       },
+      "*urbandictionary.com": {
+        "107.150.176.1": true,
+      },
       "account.nicovideo.jp": {
         "3.167.200.113": true,
       },
@@ -413,6 +423,9 @@
       "identity.flickr.com": {
         "34.192.66.226": true,
         "52.6.22.65": true,
+      },
+      "public.api.bsky.app": {
+        "84.17.37.214": true,
       },
       "services.github.com": {
         "140.82.113.18": true,
@@ -562,6 +575,9 @@
       "wallet.proton.me": {
         "194.0.147.12": true,
       },
+      "web-cdn.bsky.app": {
+        "138.199.24.209": true,
+      },
       "*.instagram.com": {
         "102.132.104.174": true,
         "157.240.210.174": true,
@@ -625,6 +641,9 @@
       },
       "sp.nicovideo.jp": {
         "3.167.200.113": true,
+      },
+      "status.bsky.app": {
+        "76.76.21.164": true,
       },
       "www.f-droid.org": {
         "37.218.243.72": true,
@@ -873,6 +892,9 @@
       "_*.yahoo.com": {
         "2001:67c:2960:6464::b4de:6a0b": true,
       },
+      "api.bsky.app": {
+        "108.179.136.10": true,
+      },
       "*.claude.ai": {
         "2a01:4f8:c2c:123f:64:5:a04f:680a": true,
       },
@@ -1029,6 +1051,9 @@
         "149.154.161.145": true,
         "95.161.64.100": true,
         "95.161.64.99": true,
+      },
+      "*bsky.app": {
+        "18.217.21.49": true,
       },
       "*ehgt.org": {
         "109.236.85.28": true,
@@ -1192,6 +1217,11 @@
           sni: "baidu.com",
         },
       },
+      "geminiweb-pa.clients6.google.com": {
+        ".*": {
+          sni: "none",
+        },
+      },
       "production.cloudflare.docker.com": {
         ".*": {
           sni: "none",
@@ -1333,6 +1363,11 @@
           sni: "none",
         },
       },
+      "my.urbandictionary.com": {
+        ".*": {
+          sni: "none",
+        },
+      },
       "store.steampowered.com": {
         ".*": {
           sni: "none",
@@ -1393,6 +1428,11 @@
           sni: "none",
         },
       },
+      "copilot.microsoft.com": {
+        ".*": {
+          sni: "copilot.microsoft.com",
+        },
+      },
       "docs-editor.proton.me": {
         ".*": {
           sni: "none",
@@ -1424,6 +1464,11 @@
         },
       },
       "*archiveofourown.org": {
+        ".*": {
+          sni: "none",
+        },
+      },
+      "*urbandictionary.com": {
         ".*": {
           sni: "none",
         },
@@ -1511,6 +1556,11 @@
       "packages.elastic.co": {
         ".*": {
           proxy: "elastic.proxy.ustclug.org",
+        },
+      },
+      "public.api.bsky.app": {
+        ".*": {
+          sni: "none",
         },
       },
       "services.github.com": {
@@ -1725,6 +1775,11 @@
           sni: "none",
         },
       },
+      "web-cdn.bsky.app": {
+        ".*": {
+          sni: "none",
+        },
+      },
       "*.buy.yahoo.com": {
         ".*": {
           sni: "buy.yahoo.com",
@@ -1823,6 +1878,11 @@
       "repo1.maven.org": {
         ".*": {
           proxy: "maven.proxy.ustclug.org",
+        },
+      },
+      "status.bsky.app": {
+        ".*": {
+          sni: "none",
         },
       },
       "www.f-droid.org": {
@@ -2211,6 +2271,11 @@
           sni: "g.cn",
         },
       },
+      "api.bsky.app": {
+        ".*": {
+          sni: "none",
+        },
+      },
       "cn.vuejs.org": {
         ".*": {
           sni: "vuejs.org",
@@ -2457,6 +2522,16 @@
       "telegra.ph": {
         "^/$": {
           desc: "资源404,但不影响文字加载,无法加载相关资源丢给彩蛋",
+          sni: "none",
+        },
+      },
+      "*arena.ai": {
+        ".*": {
+          sni: "arena.ai",
+        },
+      },
+      "*bsky.app": {
+        ".*": {
           sni: "none",
         },
       },
@@ -3195,7 +3270,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610291210,
+      version: 202610292254,
       id: "io.github.cute-omega",
     },
   },
