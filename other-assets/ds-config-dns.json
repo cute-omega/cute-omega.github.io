@@ -196,6 +196,7 @@
       },
       "graphql.api.dailymotion.com": {
         "34.84.14.157": true,
+        "18.65.14.4": true,
       },
       "^(.*\\.)?usercontent\\.goog$": {
         "47.102.115.14": {
@@ -338,7 +339,7 @@
         "149.154.170.200": true,
       },
       "*youtube-nocookie.com": {
-        "183.56.143.147": true,
+        "google.spacetime.cc.cd": true,
       },
       "account-api.proton.me": {
         "185.70.42.20": true,
@@ -428,19 +429,17 @@
         "151.101.1.229": true,
       },
       "identity.flickr.com": {
-        "100.57.141.104": true,
+        "34.192.66.226": true,
         "52.6.22.65": true,
       },
       "jsdelivr.pai233.top": {
         "66.33.60.129": true,
-        "66.33.60.193": true,
-        "76.76.21.123": true,
+        "66.33.60.194": true,
         "76.76.21.241": true,
-        "66.33.60.34": true,
         "66.33.60.35": true,
-        "66.33.60.66": true,
         "66.33.60.67": true,
-        "76.76.21.61": true,
+        "76.76.21.22": true,
+        "76.76.21.98": true,
       },
       "packages.elastic.co": {
         "34.120.127.130": true,
@@ -535,6 +534,7 @@
       },
       "upld.e-hentai.org": {
         "89.149.221.236": true,
+        "85.17.247.144": true,
       },
       "wktk.nicovideo.jp": {
         "3.167.200.113": true,
@@ -641,9 +641,6 @@
       },
       "*duckduckgo.com": {
         "20.43.161.105": true,
-      },
-      "*greasyfork.org": {
-        "96.126.98.220": true,
       },
       "*huggingface.co": {
         "3.167.200.113": true,
@@ -870,7 +867,7 @@
         "elb-io.us-east-1.aws.dckr.io": true,
       },
       "*android.com": {
-        "183.56.143.147": true,
+        "google.spacetime.cc.cd": true,
       },
       "*archive.org": {
         "207.241.237.2": true,
@@ -883,7 +880,7 @@
         "2001:67c:2960:6464::6797:9785": true,
       },
       "*blogger.com": {
-        "183.56.143.147": true,
+        "google.spacetime.cc.cd": true,
       },
       "*discord.com": {
         "162.159.136.232": true,
@@ -895,7 +892,7 @@
         "37.218.243.72": true,
       },
       "*gstatic.com": {
-        "183.56.143.147": true,
+        "google.spacetime.cc.cd": true,
       },
       "*lumalabs.ai": {
         "76.76.21.21": true,
@@ -931,7 +928,7 @@
         "89.222.127.8": true,
       },
       "*youtube.com": {
-        "183.56.143.147": true,
+        "google.spacetime.cc.cd": true,
       },
       "_*.yahoo.com": {
         "2001:67c:2960:6464::b4de:6a0b": true,
@@ -947,14 +944,11 @@
         "210.140.139.155": true,
       },
       "*.ggpht.com": {
+        "google.spacetime.cc.cd": true,
         "142.251.189.206": {
           desc: "自动地区官方",
         },
-        "183.56.143.147": true,
         "8.137.102.117": false,
-      },
-      "*.pixiv.net": {
-        "210.140.139.155": true,
       },
       "*bbci.co.uk": {
         "23.77.21.232": true,
@@ -972,7 +966,7 @@
         "20.27.177.113": true,
       },
       "*google.com": {
-        "183.56.143.147": true,
+        "google.spacetime.cc.cd": true,
       },
       "*instagr.am": {
         "157.240.236.174": true,
@@ -1022,10 +1016,10 @@
         "203.137.29.49": true,
       },
       "i.ytimg.com": {
+        "google.spacetime.cc.cd": true,
         "142.251.189.206": {
           desc: "自动地区官方",
         },
-        "183.56.143.147": true,
         "8.137.102.117": false,
       },
       "m.twitch.tv": {
@@ -1096,10 +1090,8 @@
         "51.137.3.17": true,
       },
       "s.yimg.com": {
-        "69.147.65.251": true,
-        "69.147.65.252": true,
-        "69.147.87.251": true,
-        "69.147.87.252": true,
+        "69.147.92.11": true,
+        "69.147.92.12": true,
       },
       "telegra.ph": {
         "149.154.161.145": true,
@@ -1124,7 +1116,7 @@
         "89.222.127.8": true,
       },
       "*youtu.be": {
-        "183.56.143.147": true,
+        "google.spacetime.cc.cd": true,
       },
       "docker.io": {
         "elb-io.us-east-1.aws.dckr.io": true,
@@ -1139,7 +1131,7 @@
         "146.75.36.81": true,
       },
       "*google*": {
-        "183.56.143.147": true,
+        "google.spacetime.cc.cd": true,
       },
       "*mega.io": {
         "66.203.127.11": true,
@@ -1838,7 +1830,7 @@
       },
       "*greasyfork.org": {
         ".*": {
-          sni: "none",
+          sni: "www.baidu.com",
         },
       },
       "*huggingface.co": {
@@ -2297,11 +2289,6 @@
           sni: "claude.ai",
         },
       },
-      "*.fanbox.cc": {
-        ".*": {
-          sni: "none",
-        },
-      },
       "*.ggpht.com": {
         ".*": {
           sni: "g.cn",
@@ -2310,11 +2297,6 @@
       "*.github.io": {
         ".*": {
           sni: "baidu.com",
-        },
-      },
-      "*.pixiv.net": {
-        ".*": {
-          sni: "none",
         },
       },
       "*.pixiv.org": {
@@ -2548,7 +2530,7 @@
       },
       "*ehgt.org": {
         ".*": {
-          sni: "none",
+          sni: "www.baidu.com",
         },
       },
       "*etsy.com": {
@@ -3281,7 +3263,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610290444,
+      version: 202610291210,
       id: "io.github.cute-omega.dns",
     },
   },
