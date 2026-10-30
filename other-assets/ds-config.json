@@ -367,6 +367,7 @@
         "185.205.70.10": true,
       },
       "irc-ws.chat.twitch.tv": {
+        "44.226.132.122": true,
         "3.167.200.113": true,
       },
       "status.huggingface.co": {
@@ -425,7 +426,7 @@
         "52.6.22.65": true,
       },
       "public.api.bsky.app": {
-        "84.17.37.214": true,
+        "185.111.111.157": true,
       },
       "services.github.com": {
         "140.82.113.18": true,
@@ -630,6 +631,9 @@
       "drive.proton.me": {
         "185.70.42.40": true,
       },
+      "events.bsky.app": {
+        "77.112.174.236": true,
+      },
       "gist.github.com": {
         "20.205.243.166": true,
         "20.27.177.113": true,
@@ -738,6 +742,9 @@
       "polymarket.com": {
         "64.239.109.1": true,
       },
+      "video.bsky.app": {
+        "169.150.207.211": true,
+      },
       "www.ecosia.org": {
         "2001:67c:2960:6464::ac40:9647": true,
       },
@@ -789,7 +796,7 @@
         "3.167.200.113": true,
       },
       "*telegram.org": {
-        "45.192.12.153": true,
+        "169.155.57.97": true,
         "93.183.68.61": true,
       },
       "*whatsapp.com": {
@@ -841,6 +848,9 @@
       "*blogger.com": {
         "google.spacetime.cc.cd": true,
       },
+      "*bsky.social": {
+        "52.203.70.156": true,
+      },
       "*discord.com": {
         "162.159.136.232": true,
       },
@@ -869,7 +879,7 @@
         "66.254.114.40": true,
       },
       "*telegram.me": {
-        "45.192.12.153": true,
+        "169.155.57.97": true,
         "93.183.68.61": true,
       },
       "*thetvdb.com": {
@@ -877,6 +887,7 @@
         "13.3.222.88": true,
       },
       "*twitter.com": {
+        "151.101.2.146": true,
         "172.67.172.22": true,
       },
       "*xvideos.com": {
@@ -894,6 +905,9 @@
       },
       "api.bsky.app": {
         "108.179.136.10": true,
+      },
+      "cdn.bsky.app": {
+        "169.150.207.211": true,
       },
       "*.claude.ai": {
         "2a01:4f8:c2c:123f:64:5:a04f:680a": true,
@@ -940,7 +954,7 @@
         "205.220.231.24": true,
       },
       "*telesco.pe": {
-        "45.192.12.153": true,
+        "169.155.57.97": true,
         "93.183.68.61": true,
       },
       "*tumblr.com": {
@@ -1025,6 +1039,7 @@
         "109.238.90.239": true,
       },
       "*twimg.com": {
+        "151.101.0.159": true,
         "172.67.172.22": true,
       },
       "*twitch.tv": {
@@ -1113,11 +1128,14 @@
         "157.240.236.174": true,
         "157.240.27.174": true,
       },
+      "*.x.com": {
+        "151.101.2.146": true,
+      },
       "*rfi.fr": {
         "118.214.247.61": true,
       },
       "*tg.dev": {
-        "45.192.12.153": true,
+        "169.155.57.97": true,
         "93.183.68.61": true,
       },
       "*w.wiki": {
@@ -1140,7 +1158,7 @@
         "172.67.172.22": true,
       },
       "*t.me": {
-        "45.192.12.153": true,
+        "169.155.57.97": true,
       },
       "ig.me": {
         "157.240.236.174": true,
@@ -1148,6 +1166,9 @@
       },
       "ok.ru": {
         "5.61.23.11": true,
+      },
+      "x.com": {
+        "151.101.2.146": true,
       },
       "t.me": {
         "93.183.68.61": true,
@@ -1448,6 +1469,11 @@
           sni: "none",
         },
       },
+      "irc-ws.chat.twitch.tv": {
+        ".*": {
+          sni: "none",
+        },
+      },
       "status.huggingface.co": {
         ".*": {
           sni: "status.singpass.gov.sg",
@@ -1729,6 +1755,11 @@
           sni: "disneyplus.com",
         },
       },
+      "assets.twitch.tv": {
+        ".*": {
+          sni: "static.twitchcdn.net",
+        },
+      },
       "cdn.jsdelivr.net": {
         "^/.*\\.(js|css|png|jpg|jpeg|gif|json)(\\?.*)?$": {
           backup: [
@@ -1861,6 +1892,11 @@
         },
       },
       "drive.proton.me": {
+        ".*": {
+          sni: "none",
+        },
+      },
+      "events.bsky.app": {
         ".*": {
           sni: "none",
         },
@@ -2020,6 +2056,11 @@
           sni: "vercel.com",
         },
       },
+      "video.bsky.app": {
+        ".*": {
+          sni: "none",
+        },
+      },
       "www.ecosia.org": {
         ".*": {
           sni: "www.ecosia.org",
@@ -2146,11 +2187,6 @@
           sni: "none",
         },
       },
-      "gql.twitch.tv": {
-        ".*": {
-          sni: "none",
-        },
-      },
       "raw.incept.pw": {
         "^.*\\?DS_DOWNLOAD$": {
           responseReplace: {
@@ -2194,6 +2230,11 @@
       "*blogger.com": {
         ".*": {
           sni: "g.cn",
+        },
+      },
+      "*bsky.social": {
+        ".*": {
+          sni: "none",
         },
       },
       "*discord.com": {
@@ -2256,6 +2297,11 @@
           sni: "none",
         },
       },
+      "*twitter.com": {
+        ".*": {
+          sni: "none",
+        },
+      },
       "*xvideos.com": {
         ".*": {
           sni: "none",
@@ -2272,6 +2318,11 @@
         },
       },
       "api.bsky.app": {
+        ".*": {
+          sni: "none",
+        },
+      },
+      "cdn.bsky.app": {
         ".*": {
           sni: "none",
         },
@@ -2407,11 +2458,6 @@
           sni: "g.cn",
         },
       },
-      "m.twitch.tv": {
-        ".*": {
-          sni: "none",
-        },
-      },
       "*.youtu.be": {
         ".*": {
           sni: "baidu.com",
@@ -2468,6 +2514,11 @@
         },
       },
       "*rutube.ru": {
+        ".*": {
+          sni: "none",
+        },
+      },
+      "*twimg.com": {
         ".*": {
           sni: "none",
         },
@@ -2625,6 +2676,11 @@
           sni: "none",
         },
       },
+      "*.x.com": {
+        ".*": {
+          sni: "none",
+        },
+      },
       "*rfi.fr": {
         ".*": {
           sni: "none",
@@ -2676,6 +2732,11 @@
         },
       },
       "ok.ru": {
+        ".*": {
+          sni: "none",
+        },
+      },
+      "x.com": {
         ".*": {
           sni: "none",
         },
@@ -3270,7 +3331,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610300448,
+      version: 202610301210,
       id: "io.github.cute-omega",
     },
   },
