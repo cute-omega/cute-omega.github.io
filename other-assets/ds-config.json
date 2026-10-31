@@ -318,7 +318,7 @@
         "5.161.34.136": true,
       },
       "store.steampowered.com": {
-        "23.39.61.133": true,
+        "23.15.142.182": true,
       },
       "web-static.archive.org": {
         "207.241.237.2": true,
@@ -1356,7 +1356,7 @@
       },
       "discuss.huggingface.co": {
         ".*": {
-          sni: "none",
+          sni: "hellohellohello.hosted-by-discourse.com",
         },
       },
       "kws1*.web.telegram.org": {
@@ -1431,7 +1431,7 @@
       },
       "business.whatsapp.com": {
         ".*": {
-          sni: "none",
+          sni: "scontent.xx.fbcdn.net",
         },
       },
       "cdn1.cdn-telegram.org": {
@@ -2114,7 +2114,7 @@
       },
       "*facebook.com": {
         ".*": {
-          sni: "none",
+          sni: "scontent.xx.fbcdn.net",
         },
       },
       "*gamer.com.tw": {
@@ -2485,7 +2485,7 @@
       },
       "*fbcdn.net": {
         ".*": {
-          sni: "none",
+          sni: "scontent.xx.fbcdn.net",
         },
       },
       "*imgur.com": {
@@ -3331,7 +3331,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610311152,
+      version: 202610312215,
       id: "io.github.cute-omega",
     },
   },

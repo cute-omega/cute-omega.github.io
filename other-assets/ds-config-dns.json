@@ -324,7 +324,7 @@
         "5.161.34.136": true,
       },
       "store.steampowered.com": {
-        "23.39.61.133": true,
+        "23.15.142.182": true,
       },
       "web-static.archive.org": {
         "207.241.237.2": true,
@@ -445,14 +445,11 @@
       },
       "jsdelivr.pai233.top": {
         "66.33.60.129": true,
-        "66.33.60.130": true,
-        "66.33.60.193": true,
         "66.33.60.194": true,
         "76.76.21.142": true,
-        "76.76.21.164": true,
-        "66.33.60.66": true,
-        "66.33.60.67": true,
-        "76.76.21.61": true,
+        "76.76.21.241": true,
+        "66.33.60.34": true,
+        "76.76.21.22": true,
       },
       "packages.elastic.co": {
         "34.120.127.130": true,
@@ -1131,6 +1128,8 @@
       "s.yimg.com": {
         "69.147.65.251": true,
         "69.147.65.252": true,
+        "69.147.87.251": true,
+        "69.147.87.252": true,
       },
       "telegra.ph": {
         "149.154.161.145": true,
@@ -1426,7 +1425,7 @@
       },
       "discuss.huggingface.co": {
         ".*": {
-          sni: "none",
+          sni: "hellohellohello.hosted-by-discourse.com",
         },
       },
       "kws1*.web.telegram.org": {
@@ -1501,7 +1500,7 @@
       },
       "business.whatsapp.com": {
         ".*": {
-          sni: "none",
+          sni: "scontent.xx.fbcdn.net",
         },
       },
       "cdn1.cdn-telegram.org": {
@@ -2184,7 +2183,7 @@
       },
       "*facebook.com": {
         ".*": {
-          sni: "none",
+          sni: "scontent.xx.fbcdn.net",
         },
       },
       "*gamer.com.tw": {
@@ -2555,7 +2554,7 @@
       },
       "*fbcdn.net": {
         ".*": {
-          sni: "none",
+          sni: "scontent.xx.fbcdn.net",
         },
       },
       "*imgur.com": {
@@ -3401,7 +3400,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202610311152,
+      version: 202610312215,
       id: "io.github.cute-omega.dns",
     },
   },
