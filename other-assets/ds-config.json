@@ -2950,7 +2950,6 @@
           "*linux.do",
           "greasyfork.org",
           "*grok.com",
-          "*grok.ai",
           "*x.ai",
         ],
         enabled: true,
@@ -3376,7 +3375,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202611021208,
+      version: 202611030144,
       id: "io.github.cute-omega",
     },
   },
