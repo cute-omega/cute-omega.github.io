@@ -155,6 +155,14 @@
       "internal-api.virginia.labs.lumalabs.ai": {
         "34.204.141.236": true,
       },
+      "^(store|checkout)\\.steampowered\\.com$": {
+        "104.83.198.104": true,
+        "184.31.230.122": true,
+        "23.209.218.108": true,
+        "23.35.102.114": true,
+        "23.51.62.114": true,
+        "23.55.98.103": true,
+      },
       "community.cloudflare.steamstatic.com": {
         "172.64.145.151": true,
         "104.18.42.105": true,
@@ -162,14 +170,6 @@
       },
       "objects-origin.githubusercontent.com": {
         "140.82.113.22": true,
-      },
-      "^(store|checkout).steampowered.com$": {
-        "104.83.198.104": true,
-        "184.31.230.122": true,
-        "23.209.218.108": true,
-        "23.35.102.114": true,
-        "23.51.62.114": true,
-        "23.55.98.103": true,
       },
       "clientconfig.akamai.steamstatic.com": {
         " 23.208.12.191": true,
@@ -316,9 +316,6 @@
       },
       "my.urbandictionary.com": {
         "5.161.34.136": true,
-      },
-      "store.steampowered.com": {
-        "23.15.142.182": true,
       },
       "web-static.archive.org": {
         "207.241.237.2": true,
@@ -1215,6 +1212,11 @@
           sni: "www.baidu.com",
         },
       },
+      "^(store|checkout)\\.steampowered\\.com$": {
+        ".*": {
+          sni: "baidu.com",
+        },
+      },
       "objects-origin.githubusercontent.com": {
         ".*": {
           sni: "none",
@@ -1224,11 +1226,6 @@
         ".*": {
           unVerifySsl: true,
           desc: "steam社区数据不能也不需调整sni,直接直连",
-          sni: "baidu.com",
-        },
-      },
-      "^(store|checkout).steampowered.com$": {
-        ".*": {
           sni: "baidu.com",
         },
       },
@@ -1399,11 +1396,6 @@
           sni: "none",
         },
       },
-      "store.steampowered.com": {
-        ".*": {
-          sni: "none",
-        },
-      },
       "zws1*.web.telegram.org": {
         ".*": {
           sni: "none",
@@ -1553,6 +1545,7 @@
           sni: "baidu.com",
         },
         ".*": {
+          verifyHost: "steamcommunity.com",
           sni: "none",
         },
       },
@@ -1615,6 +1608,7 @@
       },
       "*.media.tumblr.com": {
         ".*": {
+          verifyHost: "tumblr.com",
           sni: "none",
         },
       },
@@ -1698,6 +1692,7 @@
       },
       "images.prismic.io": {
         ".*": {
+          verifyHost: "imgix.net",
           sni: "imgix.net",
         },
       },
@@ -1740,6 +1735,7 @@
       },
       "*hentaiverse.org": {
         ".*": {
+          verifyHost: "hentaiverse.org",
           sni: "none",
         },
       },
@@ -1853,6 +1849,7 @@
       },
       "*discordapp.net": {
         ".*": {
+          verifyHost: "discordapp.net",
           sni: "none",
         },
       },
@@ -1869,11 +1866,13 @@
       },
       "*greasyfork.org": {
         ".*": {
+          verifyHost: "greasyfork.org",
           sni: "www.baidu.com",
         },
       },
       "*huggingface.co": {
         ".*": {
+          verifyHost: "huggingface.cn",
           sni: "huggingface.cn",
         },
       },
@@ -1967,6 +1966,7 @@
       },
       "*ehtracker.org": {
         ".*": {
+          verifyHost: "ehtracker.org",
           sni: "none",
         },
       },
@@ -2053,6 +2053,7 @@
       },
       "huggingface.co": {
         ".*": {
+          verifyHost: "huggingface.cn",
           sni: "huggingface.cn",
         },
       },
@@ -2078,6 +2079,7 @@
       },
       "polymarket.com": {
         ".*": {
+          verifyHost: "vercel.com",
           sni: "vercel.com",
         },
       },
@@ -2122,6 +2124,7 @@
       },
       "*amazon.co.jp": {
         ".*": {
+          verifyHost: "p-yo-www-amazon-com-kalias.amazon.com",
           sni: "amazon.com",
         },
       },
@@ -2291,6 +2294,7 @@
       },
       "*lumalabs.ai": {
         ".*": {
+          verifyHost: "vercel.com",
           sni: "vercel.com",
         },
       },
@@ -2419,6 +2423,7 @@
       },
       "*github.com": {
         ".*": {
+          verifyHost: "github.com",
           sni: "none",
         },
       },
@@ -2460,6 +2465,7 @@
       },
       "*vercel.app": {
         ".*": {
+          verifyHost: "vercel.com",
           sni: "vercel.com",
         },
       },
@@ -2618,6 +2624,7 @@
       },
       "*arena.ai": {
         ".*": {
+          verifyHost: "mta-sts.everify.arena.ai",
           sni: "arena.ai",
         },
       },
@@ -2633,6 +2640,7 @@
       },
       "*etsy.com": {
         ".*": {
+          verifyHost: "etsy.com",
           sni: "none",
         },
       },
@@ -2669,11 +2677,13 @@
       },
       "*.w.wiki": {
         ".*": {
+          verifyHost: "w.wiki",
           sni: "none",
         },
       },
       "*bbc.com": {
         ".*": {
+          verifyHost: "bbc.com",
           sni: "none",
         },
       },
@@ -2689,11 +2699,13 @@
       },
       "*mega.nz": {
         ".*": {
+          verifyHost: "mega.nz",
           sni: "none",
         },
       },
       "*nyaa.si": {
         ".*": {
+          verifyHost: "ddos-guard.net",
           sni: "ddos-guard.net",
         },
       },
@@ -2725,6 +2737,7 @@
       },
       "*rfi.fr": {
         ".*": {
+          verifyHost: "rfi.fr",
           sni: "none",
         },
       },
@@ -3377,7 +3390,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202611120626,
+      version: 202611121335,
       id: "io.github.cute-omega",
     },
   },
