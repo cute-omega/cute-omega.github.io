@@ -3390,7 +3390,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202611130031,
+      version: 202611131252,
       id: "io.github.cute-omega",
     },
   },
