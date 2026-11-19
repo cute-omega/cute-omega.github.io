@@ -1180,7 +1180,6 @@
       },
       "^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions|wikibooks).org$": {
         ".*": {
-          unVerifySsl: true,
           sni: "mediawiki.org",
         },
       },
@@ -2748,7 +2747,7 @@
       },
       "*w.wiki": {
         ".*": {
-          unVerifySsl: true,
+          verifyHost: "mediawiki.org",
           sni: "mediawiki.org",
         },
       },
@@ -3390,7 +3389,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202611191344,
+      version: 202611200100,
       id: "io.github.cute-omega",
     },
   },
