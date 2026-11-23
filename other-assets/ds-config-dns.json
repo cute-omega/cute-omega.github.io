@@ -442,12 +442,12 @@
       },
       "jsdelivr.pai233.top": {
         "66.33.60.129": true,
-        "66.33.60.130": true,
         "66.33.60.193": true,
-        "76.76.21.142": true,
-        "76.76.21.241": true,
+        "76.76.21.123": true,
+        "76.76.21.22": true,
         "76.76.21.61": true,
         "76.76.21.93": true,
+        "76.76.21.98": true,
       },
       "packages.elastic.co": {
         "34.120.127.130": true,
@@ -3459,7 +3459,7 @@
     },
     metaInfo: {
       updateLog: "周期性自动更新",
-      version: 202611231331,
+      version: 202611240346,
       id: "io.github.cute-omega.dns",
     },
   },
